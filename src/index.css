@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#HeaderId{
+    width: 100%;
+   background-color: rgb(64, 0, 255);
+   top: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#NavId{
+    width: 100vw;
+    background-color: rgb(13, 255, 0);
+
 }
+
+#FooterId{
+    background-color: #ffffff;
+    height: 10vh;
+    font-size: small;
+    display: flex;
+    align-items: center !important;
+    justify-content:space-around;
+    width: 100%;
+
+}
+
+#KotiId{
+    font-family: fantasy;
+    background-color: #36393e;
+    width: 70%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+#ekaosio{
+    
+
+}
+
+#ekavideo{
+    width: 60%;
+    
+
+}
+
+#kotiteksti1{
+  
+}
+
+body{
+    background-color: #424549	;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden ;
+}
+
