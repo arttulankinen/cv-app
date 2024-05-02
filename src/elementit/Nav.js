@@ -5,17 +5,13 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <div id='NavId'>
-      <ul>
-        <li>
-          <Link to="/">Koti</Link>
-        </li>
-        <li>
-          <Link to="/Yhteystiedot">Ota yhteyttä</Link>
-        </li>
-        <li>
-          <Link to="/CV">CV</Link>
-        </li>
-      </ul>
+     
+          <Link to="/"><button className='navbuttons'>Koti</button></Link>
+       
+          <Link to="/Yhteystiedot"><button className='navbuttons'>Ota yhteyttä</button></Link>
+       
+          <Link to="/CV"><button className='navbuttons'>CV</button></Link>
+
     </div>
   );
 }

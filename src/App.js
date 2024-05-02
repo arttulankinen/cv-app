@@ -6,6 +6,7 @@ import { Nav } from './elementit/Nav';
 import { Koti } from './Sivut/Koti';
 import { CV } from './Sivut/CV';
 import { Yhteystiedot } from './Sivut/Yhteystiedot';
+import { NotFound} from './Sivut/NotFound'
 import './index.css';
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
           <Route path='/' element={<Koti />} />
           <Route path='/Yhteystiedot' element={<Yhteystiedot />} />
           <Route path='/CV' element={<CV />} />
+          <Route path='/*' element={<NotFound />} />
         </Routes>
-        {window.location === '/' && <Koti />}
         <Footer />
       </div>
     </Router>

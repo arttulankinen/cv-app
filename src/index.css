@@ -1,19 +1,60 @@
-#HeaderId{
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:monospace;
+}
+
+#otsikko{
+    color: #ffffff;
     width: 100%;
-   background-color: rgb(64, 0, 255);
+   background-color: #282b30;
    top: 0;
+   height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 45px;
+   font-weight: 800;
+}
+
+#otsikko span{
+    font-weight:200;
+    color:#7289da;
 }
 
 #NavId{
+    font-weight: 400;
     width: 100vw;
-    background-color: rgb(13, 255, 0);
+    background-color: #282b30;
+    display:flex ;
+    justify-content: center;
 
 }
 
+.navbuttons{
+    color: #ffffff;
+    width: 33.33vw;
+    height: 200%;
+    font-size: x-large;
+    background-color: #282b30;
+    border-color: #7289da ;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.navbuttons:hover {
+    color: #7289da;
+    cursor: pointer;
+    
+}
+
 #FooterId{
-    background-color: #ffffff;
+    color: white;
+    background-color: #7289da;
     height: 10vh;
-    font-size: small;
+    font-size: large;
     display: flex;
     align-items: center !important;
     justify-content:space-around;
@@ -23,34 +64,63 @@
 
 #KotiId{
     font-family: fantasy;
-    background-color: #36393e;
-    width: 70%;
+    width: 80%;
     height: 200vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     overflow: hidden;
+    transition: all 0.3s ease 0s;
+    padding-top: 10%;
+   
 }
 
-#ekaosio{
+#ekaosio {
+    border:2px solid #7289da;
+    background-color:#424549;
+    padding-bottom: 00%;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    border-radius: 10px;
+    height: 30rem;
+     
+}
+
+.teksti-osa{
+    background: linear-gradient(to right, 
+        #282828,
+        #424549,
+        #36393e,
+        #282b30,
+        #1e2124
+   );
+    color: #ffffff;
+    width: 150%;
+    transition: all 0.3s ease 0s;
+    font-size: x-large;
+}
+
+.video-osa{
+    transition: all 0.3s ease 0s;
+    width: 50%;
+}
+
+#tokaosio{
     
-
+    background-color:#1e2124	;
+    padding-bottom: 00%;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    border:2px solid #7289da;
+    border-radius: 10px;
+    height: 30rem;
 }
 
-#ekavideo{
-    width: 60%;
-    
+#kuva{
+    width: 100px;
 
-}
-
-#kotiteksti1{
-  
 }
 
 body{
-    background-color: #424549	;
+    background-color: #282b30	;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
