@@ -1,34 +1,27 @@
 import React from 'react'
-import koodi from '../images/koodi.mp4'
-import code from '../images/code.png'
+import reactlogo from '../images/reactlogo.png';
 
 function Koti() {
-    return(
-<div id='KotiId'>
-<div id="ekaosio">
-    <div class="teksti-osa">
-        <p>Hei! <br/>
-        Nimeni on Arttu Lankinen ja olen 21-vuotias tietotekniikka 
-        insinööri opiskelija Kuopiosta. Harrastuksiini kuuluu salilla käyminen, tietokoneet ja koodaus.</p>
-    </div>
-     <div class="video-osa">
-        <video id='ekavideo' src={koodi} autoPlay loop muted/>
-    </div>
-</div>
-<div id='tokaosio'>
-<div class="teksti-osa">
-        <p>Hei! <br/>
-        Nimeni on Arttu Lankinen ja olen 21-vuotias tietotekniikka 
-        insinööri opiskelija Kuopiosta. Harrastuksiini kuuluu salilla käyminen, tietokoneet ja koodaus.</p>
-    </div>
-     <div class="kuva-osa">
-    <img id='kuva' src={code} alt='code'></img>
-    </div>
-    
-</div>
-</div>
-);
+
+
+    return (
+        <div>
+            <div id="ekaosio">
+                    <p id="teksti1">Hei!<br />
+                    Nimeni on Arttu Lankinen ja olen 21-vuotias tietotekniikka
+                    insinööri opiskelija Kuopiosta. Harrastuksiini 
+                    kuuluu salilla käyminen, tietokoneet ja koodaus.</p>
+            </div>
+            <div id='tokaosio'>
+            <img id='reactlogo' src={reactlogo} alt='logo'/>
+                    <p>Tämä sivu on toteutettu käyttäen Reactia, 
+                        Sivun tarkoituksena on antaa ymmärrys koodaus taidoistani 
+                        ja kertoa Työnantajille itestäni.</p>
+                        
+            </div>
+            
+        </div>
+    );
 }
 
-
-export {Koti}
+export { Koti }

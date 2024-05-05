@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from './elementit/Header';
 import { Footer } from './elementit/Footer';
 import { Nav } from './elementit/Nav';
 import { Koti } from './Sivut/Koti';
@@ -13,7 +12,6 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
         <Nav />
         <Routes>
           <Route path='/' element={<Koti />} />

@@ -3,13 +3,9 @@ import React from 'react'
 function Footer() {
     return(
     <div id='FooterId'>
-        <p> Arttu Lankinen<br/>
-            Yhteystiedot</p>
-
+        <p>&copy; Arttu Lankinen<br/></p>
     </div>
     );
-
 }
-
 
 export {Footer}
