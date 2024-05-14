@@ -8,10 +8,12 @@ import { Yhteystiedot } from './Sivut/Yhteystiedot';
 import { NotFound} from './Sivut/NotFound'
 import './index.css';
 
+
+
+
 function App() {
   return (
-    <Router>
-      <div>
+    <Router> 
         <Nav />
         <Routes>
           <Route path='/' element={<Koti />} />
@@ -20,7 +22,6 @@ function App() {
           <Route path='/*' element={<NotFound />} />
         </Routes>
         <Footer />
-      </div>
     </Router>
   );
 }
