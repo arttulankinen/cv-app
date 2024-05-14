@@ -14,19 +14,16 @@
     list-style: none;
     text-decoration: none;
     font-family: myFont2;
-    
-
 }
 
-#YhteystiedotId{
-    padding-top: 100px;
+.notfound{
     height: 100vh;
-    color: #000000;
-    background: white;
+    background-color: #0a1e31;
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    text-align: center;
+    justify-content: center;
 }
 
 #otsikko {
@@ -49,7 +46,6 @@
     display: flex;
 }
 
-
 #NavId {
     display: flex;
     justify-content: center;
@@ -57,42 +53,61 @@
     position: fixed;
     width: 100vw;
     background-color: #1e2124;
-    z-index: 2;
+    z-index: 3;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.log{
+    padding: 0 25px;
+    font-size: large;
+}
+
+.log:hover{
+   
+    animation: underline 1s ease-out forwards;
+   
 }
 
 .logot {
-    align-content: center;
-    border: none;
-   margin-right: 100px;
-    background-color: #1e2124;
-    list-style: none;
-    transition: all 0.6s ease 0s;
+   display: flex;
+    padding: 0px 25px;    
 }
 
 .logot:hover{
     transform: scale(0.7);
     cursor:pointer;
-    transform-style: underline;
+    text-decoration: underline;
+   display: flex;
 }
 
 .navbuttons:hover {
     color: #7289da;
     cursor: pointer;
+   
   
 }
 .copy{
-    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
 }
 
 #FooterId {
     color: white;
     background-color: #7289da;
-    height: 10vh;
+    height: 7vh;
+    width: 100%;
     font-size: large;
     display: flex;
-    align-items: center !important;
-    justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
 }
 
 .curve{
@@ -103,12 +118,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vh;
     overflow-x: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    animation: wave ease-in-out 4s infinite 
-
+    
+animation: wave ease-in-out 4s infinite 
 }
 @keyframes wave {
     0% {width: 100%;}
@@ -125,19 +140,12 @@
 }
 
 .curves .shape-fill {
-    fill: #48547f;  
-}
-
-#code{
-   width: 50%;
-   object-fit: cover;
-   z-index: 1;
-   padding-top: 80px;
+    fill: #2d2e3a;  
 }
 
 #ekaosio {
     color: rgb(255, 255, 255);
-    background: #48547f;
+    background: #2d2e3a;
     transition: background-color 0.3s ease;
     display: flex;
     height: 70vh;
@@ -146,21 +154,18 @@
     justify-content: center;
 }
 
-#tokaosio {
-    color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #1e2124, #2b2e32 45%, #3a3d40 55%, #1e2124);
-    display: flex;
-    height: 80vh;
-}
-
 #teksti1{
     position: absolute;
     font-size: large;
     text-align: center;
+    z-index: 2;
 }
 #teksti1 span {
+    position: absolute;
     color: #ffffff;
     font-size: x-large;
+    top: 15vh;
+    left: 40%;
 }
 #teksti1 span:hover{
     color: #9e01ff;
@@ -168,38 +173,97 @@
     cursor: pointer;
 }
 
-
 #teksti2{
     position: absolute;
     font-size: large;
     text-align: center;
+    z-index: 1;
 }
 
-#reverse{
-   position: absolute;
-   top: 40%;
-   border: none;
-   background-color: #48547f;
-   size: 10%;
-   opacity:0;
+#teksti2 span {
+    position: absolute;
+    color: #ffffff;
+    font-size: x-large;
+    top: 15vh;
+    left: 40%;
 }
-#reverse:hover{
-  
+
+#teksti2 span:hover{
+    color: #9e01ff;
+    font-size: x-large;
     cursor: pointer;
-    transform: scale(0.9);
+}
+
+#tokaosio {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #1e2124, #2b2e32 45%, #3a3d40 55%, #1e2124);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teksti3{
+    position: absolute;
+   text-align: center;
+    font-size: larger;
+   
+}
+
+#reactlogo {
+   padding-top:10%;
+   height: 4vh;
+   width: 4vh;
+   
 }
 
 /*animations ekaosio*/
 
+@keyframes underline {
+    0%{
+        text-decoration-opacity: 0;
+        text-decoration:none ;
+      
+    }
+    50%{
+   
+      
+       
+    }
+    100%{
+       
+        text-decoration:underline ;
+        text-decoration-color:aqua ;
+        text-decoration-thickness: 3px;
+       
+        text-underline-offset:175%;
+    }
+    
+}
+
 @keyframes slide2 {
     0%{
-        transform: translateX(150%);
+        opacity: 0;
+        transform: translateX(300%);
     }
  
     100%{
     
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes slideback2 {
+    0%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+ 
+    100%{
+    
+        opacity: 0;
+        transform: translateX(300%);
     }
 }
 
@@ -211,84 +275,432 @@
 
     }
     100%{
-        transform: translateX(-150%);
+        transform: translateX(-300%);
         opacity: 0;
     }
 }
 
-@keyframes slide3 {
+@keyframes slideback {
     0%{
         opacity: 0;
-        transform: translateX(-150%);
+        transform: translateX(-300%);
         
 
     }
     100%{
-        transform: translateX(0%);
+        transform: translateX(0);
         opacity: 1;
     }
 }
 
-
-@keyframes reverse1 {
+@keyframes fadein {
     0%{
         opacity: 0;
     }
     100%{
+       
         opacity: 1;
+    }
+}
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+    100%{
+      
+        opacity: 0;
     }
 }
 
 .slide{
-     animation: slide 1s ease forwards;   
+     animation: slide 1s ease-in forwards;   
 }
 .slide2{
-    animation: slide2 1s ease forwards;
-}
-.slide3{
-    animation: reverse 1s ease forwards;
-}
-.fadeInArrow {
-    animation: reverse1 2s ease forwards !important;
+    animation: slide2 1s ease-in forwards;
 }
 
-
-
-#teksti3{
-    padding-top: 20%;
+.slideback{
+    animation: slideback 1s ease-out forwards;
+ 
+}
+.slideback2{
+    animation: slideback2 1s ease-out forwards;
+    opacity: 0;
 }
 
-
-#reactlogo {
-   padding-top:10%;
-    height: 10em;
-    width: 10em;
+.fadein{
+    animation: fadein 1s ease-in forwards ;
+    opacity: 0;
+}
+.fadeout{
+    animation:fadeout 1s ease-in forwards ;
 }
 
 
 /*CONTACT ME PAGE */
 
+#contactpage{
+    height: 100vh;
+    color: #000000;
+    background:#2d2e3a;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#ohje{
+    color: #7289da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10%;
+    font-size: large;
+}
+
+.Tekstiosa{
+    background-color: #2d2e3a;
+    border-color:#7289da;
+    color: white;
+    border-style:solid ;
+    border-width: 3px;
+    padding-inline-end: 5%;
+    width: 50%;
+   
+    font-size: large;
+}
+
+.Tekstiosa::placeholder{
+    color: #7289da;
+    font-size: x-large;
+    font-family:'Courier New' ;
+}
+
 #email{
-    margin:0;
+    margin: 2%;
+   
 
 }
 
-#viestiotsikko{
-    margin: 0;
+#MSGotsikko{
+    margin: 1%;
+
+
 }
 
 #viesti{
-    width: 30%;
-    height: 50%;
+    height: 19%;
+   
+    
+
+
 }
 
-body {
-    background-color: #16191c;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+#send{
+    background: #7289da;
+    border: #7289da;
+    border-radius: 0%;
+    border-width: 6px;
+    width: 5vh;
+    height: 3vh;
+    padding-right: 5%;
+}
+
+#send:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*ANSIOLUETTELO ANIMATIONS*/
+@keyframes fadein {
+   0% {
+        opacity: 0;
+    }
+
+100% {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 20px #7289da;
+    }
+   50% {
+      box-shadow: 0px 0px 30px #7289da;
+    }
+    100% {
+        box-shadow: 0px 0px 40px #7289da;
+    }
+  }
+
+  @keyframes slideoikea {
+    0%{
+        opacity: 0;
+        transform: translateY(300%);
+    }
+ 
+    100%{
+    
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slidevasen {
+    0%{
+        opacity: 0;
+        transform: translateY(-300%);
+    }
+ 
+    100%{
+    
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes slideup {
+    0%{
+        transform: translateY(0);
+    }
+ 
+    100%{
+        transform: translateY(-600%);
+    }
+
+}
+
+@keyframes slideupReverse {
+    0%{
+        transform: translateY(-600%);
+    }
+ 
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.animate1{
+    animation: slideoikea 0.5s ease-in-out forwards ;
+    
+}
+
+.animate2{
+    animation: slidevasen 0.5s ease forwards ;
+   
+}
+
+.animate3{
+    animation: slideoikea 0.5s ease forwards ;
+    
+}
+
+.animate4{
+    animation: slideoikea 0.5s ease-in-out forwards ;
+    
+}
+
+.animate5{
+    animation: slidevasen 0.5s ease forwards ;
+    
+}
+
+.animate6{
+    animation: slideoikea 0.8s ease-in-out forwards ;
+
+}
+
+.animate7{
+    animation: slideup 3s ease-out forwards;
+}
+
+.animate8{
+    animation: slideupReverse 0.5s ease-out  ;
+
+}
+
+
+
+
+
+/*ANSIOLUETTELO*/
+#CV{
+    background: #2d2e3a;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;   
     overflow-x: hidden;
 }
 
+
+
+/*ENSINMÄINEN OSIO*/
+
+#yläosa{
+    height: 100vh;
+    display: flex;
+    padding-top: 5%;
+    align-items: center;
+    justify-content: center;
+    background: #2d2e3a;
+    
+}
+
+#otsikkocv{
+    padding-left: 20%;
+}
+
+#photo{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 360%;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255); 
+    animation: pulse 3s  infinite alternate-reverse ease-in-out;
+}
+
+.tiedot{
+    font-size: small;
+   background: #2d2e3a;
+}
+
+#esittelytxt{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    font-size: small;
+}
+
+
+/*TOINEN OSIO*/
+#scrollContainer{
+    overflow-x: scroll;
+    white-space: nowrap;
+    background: #2d2e3a;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    position: sticky;
+    
+
+}
+
+
+
+#Koulut{
+    padding-left:25%;
+    opacity: 0;
+    width: 100vw;
+}
+
+#Kortit{
+    opacity: 0;
+}
+#Intti{
+
+    opacity: 0;
+}
+#Työ{
+    opacity: 0;
+ 
+}
+#Kielet{
+    opacity: 0;
+    
+}
+
+#Harrastukset{
+    padding-right: 25%;
+    opacity: 0;
+}
+
+
+p,li{
+    color: white;
+} h1,h2{
+    color: #7289da;
+}
+
+
+/*MOBIILI LAITTEILLE*/
+
+@media only screen and (max-width: 375px) {
+   *{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x:hidden
+   }
+
+   #ekaosio{
+    height: 90vh;
+    background: linear-gradient(to right, #45517d, #7289da, #45517d);
+   }
+
+   #teksti1{
+    position: absolute;
+    font-size: small;
+    text-align: center;
+    padding-bottom: 10vh;
+    
+    z-index: 2;
+}
+#teksti1 span {
+    position: absolute;
+    color: #ffffff;
+    font-size: x-large;
+    top: 15vh;
+    left: 33%;
+}
+
+#teksti2{
+    position: absolute;
+    font-size: small;
+    text-align: center;
+    padding-bottom: 10vh;
+    z-index: 1;
+    
+}
+
+#teksti2 span {
+    position: absolute;
+    color: #ffffff;
+    font-size: x-large;
+    top: 11vh;
+    left: 36%;
+}
+
+#teksti3{
+    position: absolute;
+   text-align: center;
+    font-size: small;
+}
+
+
+#reactlogo {
+    padding-top:10%;
+     height: 4vh;
+     width: 4vh;
+ }
+
+
+ .curves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    overflow-x: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+}
 
 
