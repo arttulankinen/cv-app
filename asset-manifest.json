@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ffb1591.css",
-    "main.js": "/static/js/main.fdfc0481.js",
-    "static/media/storm.ttf": "/static/media/storm.ba6f510fcb5fb5582ffb.ttf",
-    "static/media/jai.TTF": "/static/media/jai.638cf2bd0f4cfaf51a33.TTF",
-    "static/media/face.jpg": "/static/media/face.efa4481230ba6242f419.jpg",
-    "index.html": "/index.html",
-    "main.7ffb1591.css.map": "/static/css/main.7ffb1591.css.map",
-    "main.fdfc0481.js.map": "/static/js/main.fdfc0481.js.map"
+    "main.css": "/cv-app/static/css/main.bc6e4953.css",
+    "main.js": "/cv-app/static/js/main.7ac5c52b.js",
+    "static/media/storm.ttf": "/cv-app/static/media/storm.ba6f510fcb5fb5582ffb.ttf",
+    "static/media/jai.TTF": "/cv-app/static/media/jai.638cf2bd0f4cfaf51a33.TTF",
+    "static/media/face.jpg": "/cv-app/static/media/face.efa4481230ba6242f419.jpg",
+    "index.html": "/cv-app/index.html",
+    "main.bc6e4953.css.map": "/cv-app/static/css/main.bc6e4953.css.map",
+    "main.7ac5c52b.js.map": "/cv-app/static/js/main.7ac5c52b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ffb1591.css",
-    "static/js/main.fdfc0481.js"
+    "static/css/main.bc6e4953.css",
+    "static/js/main.7ac5c52b.js"
   ]
 }
