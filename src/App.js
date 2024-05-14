@@ -13,8 +13,8 @@ import './index.css';
 
 function App() {
   return (
-    <Router> 
-        <Nav />
+    <Router basename='/cv-app'> 
+        <Nav/>
         <Routes>
           <Route path='/' element={<Koti />} />
           <Route path='/Yhteystiedot' element={<Yhteystiedot />} />
