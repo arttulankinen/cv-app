@@ -64,19 +64,22 @@
 }
 
 .log{
-    padding: 0 25px;
+    color: #6d5aae;
     font-size: large;
+    padding:  25px;
+    transition: all ease 0.5s;
 }
 
 .log:hover{
    
-    animation: underline 1s ease-out forwards;
+    animation: underline 0.5s ease forwards;
    
 }
 
 .logot {
    display: flex;
-    padding: 0px 25px;    
+    padding: 25px;    
+    transition: all ease 0.5s;
 }
 
 .logot:hover{
@@ -221,22 +224,23 @@ animation: wave ease-in-out 4s infinite
 
 @keyframes underline {
     0%{
-        text-decoration-opacity: 0;
         text-decoration:none ;
       
     }
+
     50%{
    
       
        
     }
+
     100%{
        
         text-decoration:underline ;
-        text-decoration-color:aqua ;
-        text-decoration-thickness: 3px;
-       
-        text-underline-offset:175%;
+        text-decoration-color:#6d5aae;
+        text-decoration-thickness: 2px;
+       color: white;
+        text-underline-offset:20%;
     }
     
 }
@@ -627,6 +631,24 @@ p,li{
     color: white;
 } h1,h2{
     color: #7289da;
+}
+/*--------------------LOG IN PAGE------------------*/
+#loginData{
+    padding:50%;
+    justify-content: center;
+}
+
+.loginBG{
+    height: 100vh;
+    background: #27ff68;
+}
+
+
+/*--------------------REGISTER------------------*/
+
+#register{
+    height: 100vh;
+   padding: 50%;
 }
 
 
