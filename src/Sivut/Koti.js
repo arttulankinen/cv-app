@@ -34,7 +34,7 @@ function useScrollToNextSection(thresholdShow, thresholdHide) {
 function Koti() {
     const [isClicked, setIsClicked] = useState(false);
     const [reverseClick, setReverseClick] = useState(false);
-    const thresholdHide = 300;
+    const thresholdHide = 350;
     const thresholdShow = 400;
     const {isAnimatedInvisible:isAnimated1Invisible, isAnimatedVisible: isAnimated1Visible } = useScrollToNextSection(thresholdShow, thresholdHide);
 

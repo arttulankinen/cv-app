@@ -10,9 +10,9 @@ import cv from '../images/cv.png';
       <div id='NavId'>
         <h1 id='otsikko'><span>MY</span>Resume</h1>
 
-        <Link to="/"className='log'>LOG IN</Link>
+        <Link to="/LogIn"className='log'>LOG IN</Link>
         
-        <Link to="/" className='log'>REGISTER</Link>
+        <Link to="/Register" className='log'>REGISTER</Link>
      
         <Link to="/"><img src={home} alt="Home" className='logot'/></Link>
 
