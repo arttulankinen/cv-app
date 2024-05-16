@@ -43,8 +43,9 @@ function Register() {
       };
   
       return (
+        <div id='registerpage'>
         <form id='register' onSubmit={handleSubmit}>
-          <div>
+          <div className='formgroup'>
             <label>Email:</label>
             <input
               type='text'
@@ -52,10 +53,10 @@ function Register() {
               placeholder='@gmail.com'
               value={registerData.email}
               onChange={handleChange}
-              className='register'
+              className='registerinput'
             />
           </div>
-          <div>
+          <div className='formgroup'>
             <label>Käyttäjänimi:</label>
             <input
               type='text'
@@ -63,10 +64,10 @@ function Register() {
               placeholder='MaijaMeikäläinen'
               value={registerData.käyttäjänimi}
               onChange={handleChange}
-              className='register'
+              className='registerinput'
             />
           </div>
-          <div>
+          <div className='formgroup'>
             <label>Salasana:</label>
             <input
               type='password'
@@ -74,13 +75,14 @@ function Register() {
               placeholder='********'
               value={registerData.salasana}
               onChange={handleChange}
-              className='register'
+              className='registerinput'
             />
           </div>
           <div>
           <button type='submit'>Rekisteröidy</button>
           </div>
         </form>
+        </div>
       );
     };
   
