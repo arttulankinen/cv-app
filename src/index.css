@@ -67,11 +67,11 @@
     color: #6d5aae;
     font-size: large;
     padding:  25px;
-    transition: all ease 0.5s;
+    transition: all ease 1s;
 }
 
 .log:hover{
-   
+    
     animation: underline 0.5s ease forwards;
    
 }
@@ -206,20 +206,47 @@ animation: wave ease-in-out 4s infinite
     align-items: center;
 }
 
-#teksti3{
-    position: absolute;
-   text-align: center;
-    font-size: larger;
-   
+#card{
+    height: 35vh;
+    width: 70vw;
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 0px 0px 5px #45517d; 
+    
 }
 
-#reactlogo {
-   padding-top:10%;
-   height: 4vh;
-   width: 4vh;
-   
+#card:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px #6174ba; 
 }
 
+#vasen-content{
+    width: 50%; 
+    text-align:left;   
+    font-size: large;  
+    padding: 5%;
+}
+.vasenimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#oikea-content{
+    width: 50%;
+}
+
+#oikea-content-video{
+    object-fit:cover;
+    object-position: center;
+    height: auto;
+    width: 100%;
+    
+
+}
 /*animations ekaosio*/
 
 @keyframes underline {
@@ -365,7 +392,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 .Tekstiosa{
-    background-color: #2d2e3a;
+    background-color: #1e2124;
     border-color:#7289da;
     color: white;
     border-style:solid ;
@@ -588,43 +615,137 @@ animation: wave ease-in-out 4s infinite
     white-space: nowrap;
     background: #2d2e3a;
     height: 90vh;
-    width: 100vw;
+    width:  100vw;
     display: flex;
     align-items: center;
     gap: 20%;
     position: sticky;
-    
+}
 
+.content{
+    width: 150%;
 }
 
 
 
 #Koulut{
-    padding-left:25%;
+    background-color: #1e2124;
+    box-shadow:0px 0px 10px #45517d;
+    border-radius: 3%;
+    height: 40vh;
+   
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
     opacity: 0;
-    width: 100vw;
+    transition: all 1s ease;    
+}
+
+#txt{
+   
+   
+}
+
+#Koulut:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 25px #6d5aae;
 }
 
 #Kortit{
+    background-color: #1e2124;
+    box-shadow:0px 0px 10px #45517d;
+    border-radius: 3%;
+    height: 40vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
     opacity: 0;
+    transition: all 1s ease;   
 }
-#Intti{
 
-    opacity: 0;
+#Kortit:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 25px #6d5aae;
 }
+
+#Intti{
+    background-color: #1e2124;
+    box-shadow:0px 0px 10px #45517d;
+    border-radius: 3%;
+    height: 40vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
+    opacity: 0;
+    transition: all 1s ease;   
+}
+
+#Intti:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 25px #6d5aae;
+}
+
 #Työ{
+    background-color: #1e2124;
+    box-shadow:0px 0px 10px #45517d;
+    border-radius: 3%;
+    height: 40vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
     opacity: 0;
- 
+    transition: all 1s ease;   
 }
+
+#Työ:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 25px #6d5aae;
+}
+
 #Kielet{
+    background-color: #1e2124;
+    box-shadow:0px 0px 10px #45517d;
+    border-radius: 3%;
+    height: 40vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
     opacity: 0;
+    transition: all 1s ease;   
     
 }
 
-#Harrastukset{
-    padding-right: 25%;
-    opacity: 0;
+#Kielet:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 25px #6d5aae;
 }
+
+
+#Harrastukset{
+    background-color: #1e2124;
+    box-shadow:0px 0px 10px #45517d;
+    border-radius: 3%;
+    height: 40vh;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
+    opacity: 0;
+    transition: all 1s ease;   
+    margin-right: 20%;
+}
+
+#Harrastukset:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 25px #6d5aae;
+}
+
 
 
 p,li{
@@ -646,9 +767,23 @@ p,li{
 
 /*--------------------REGISTER------------------*/
 
-#register{
+#registerpage{
+    background-color: #2d2e3a;
     height: 100vh;
-   padding: 50%;
+}
+
+.registerinput{
+    display: flex;
+    width: 50%;
+    margin-top: 10%;
+    height: 90%;
+}
+
+.formgroup{
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    margin-bottom: 5%;
+    align-items: center; 
 }
 
 

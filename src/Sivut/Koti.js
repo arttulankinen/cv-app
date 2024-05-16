@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import reactlogo from '../images/reactlogo.png';
+import code from '../images/business.jpg';
 import '../index.css';
+import mongo from '../images/mongoimg.png';
+import node from '../images/nodeimg.png';
+import reactimg from '../images/reactimg.png';
 
 function useScrollToNextSection(thresholdShow, thresholdHide) {
   const [isAnimatedVisible, setIsAnimatedVisible] = useState(false);
@@ -80,9 +83,22 @@ function Koti() {
                 </div>
             </div>
             <div id='tokaosio'>
-                <p id='teksti3' style={{opacity:0}}  className={`${isAnimated1Invisible ? 'fadein' : ''} ${isAnimated1Visible ? 'fadeout' : ''}`}>Tämä sivu on toteutettu käyttäen Reactia, <img id='reactlogo' src={reactlogo} alt='logo'/><br/>
+            <div id='card' style={{opacity:0}}  className={`${isAnimated1Invisible ? 'fadein' : ''} ${isAnimated1Visible ? 'fadeout' : ''}`}>
+                <div id='vasen-content' >
+                <p id='teksti3'>
+                    Tämä sivu on toteutettu käyttäen Reactia, MongoDB:tä sekä Node.js:sää<br/>
                     Sivun tarkoituksena on antaa ymmärrystä koodaus taidoistani 
-                    ja kertoa Työnantajille itestäni.</p>             
+                    ja kertoa Työnantajille itestäni.</p>
+                <div className='vasenimg'>
+                    <img id='node' src={node} alt='node'/>  
+                    <img id='react' src={reactimg} alt='react'/>  
+                    <img id='mongo' src={mongo} alt='mongo'/>    
+                </div>
+                </div>     
+                <div id='oikea-content'>
+                 <img id='code' src={code} alt='code'/>    
+                </div> 
+            </div>   
             </div>
         </div>
     );

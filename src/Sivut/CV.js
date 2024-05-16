@@ -127,65 +127,57 @@ import '../index.css';
           <br/>
         </h1>
       </div>
-      <div id="scrollContainer" onWheel={handleScroll}>
-           <div id="Koulut" className={isAnimated2 ? 'animate1' : ''}>
-             <h2>Koulutus</h2>
-             <p>
-               Savonia-ammattikorkeakoulu, tietotekniikan insinörikoulutus, 2022
-               - 2026
-             </p>
-             <p>
-               Savon ammattiopisto, Sähkö- ja automaatioalan perustutkinto,
-               valmistunut 5/2021
-             </p>
-           </div>
-           <div id="Kortit" className={isAnimated3 ? 'animate2' : ''}>
-             <h2>korttikoulutukset:</h2>
-             <ul>
-               <li>Tulityö (1/2024 saakka)</li>
-               <li>Työturvallisuus (11/2023 saakka)</li>
-               <li>Sähkötyöturvallisuus SFS6002 (5/2024 saakka)</li>
-             </ul>
-           </div>
-           <div id="Intti" className={isAnimated4 ? 'animate3' : ''}>
-             <h2>Varusmiespalvelus</h2>
-             <p>
-               Suoritettu KAIPR, viestikomppania, telemies, kotiutuminen
-               6/2022
-             </p>
-           </div>
-           <div id="Työ" className={isAnimated5? 'animate4' : ''}>
-             <h2>Työkokemus</h2>
-             <p>
-               Are Oy, kesä 15.5.2023-01.09.2023. Sähköasennusta urakkatyömaalla.
-             </p>
-             <p>
-               Barona Rakennus rakennusapumies, muutamia työpäiviä
-               kesä-heinäkuu 2022
-             </p>
-             <p>Osuma Henkilöstöpalvelut, sähköasentaja 12.7.2022-1.9.2022</p>
-             <p>Työssäoppimisharjoittelu Are Oy, ajalla 18.1. – 14.5.2021</p>
-             <p>
-               Työssäoppimisharjoittelu Finteco LVIS Oy, ajalla 8.11. - 4.1.2021
-             </p>
-             <p>
-               Työssäoppimisharjoittelu POK Group Oy, ajalla 27.4. – 29.5.2020
-             </p>
-             <p>
-               Työssäoppimisharjoittelu Norelco Oy, ajalla 19.8. – 15.11.2019
-             </p>
-           </div>
-           <div id="Kielet" className={isAnimated6 ? 'animate5' : ''}>
-             <h2>Kielitaito</h2>
-             <p>Suomi – Äidinkieli</p>
-             <p>Englanti – Sujuva</p>
-           </div>
-           <div id="Harrastukset" className={isAnimated7 ? 'animate6' : ''}>
-             <h2>Harrastukset</h2>
-             <p>Kuntosali, skeittaaminen, koodaaminen.</p>
-           </div>
-         </div>
-         </div>
+            <div id="scrollContainer" onWheel={handleScroll}>
+        <div id="Koulut" className={isAnimated2 ? 'animate1' : ''}>
+          <div id='txt' className='content'>
+            <h2>Koulutus</h2>
+            <p>Savonia-ammattikorkeakoulu, tietotekniikan insinörikoulutus, 2022 - 2026</p>
+            <p>Savon ammattiopisto, Sähkö- ja automaatioalan perustutkinto, valmistunut 5/2021</p>
+          </div>
+        </div>
+        <div id="Kortit" className={isAnimated3 ? 'animate2' : ''}>
+          <div id='txt' className='content'>
+            <h2>korttikoulutukset:</h2>
+            <ul>
+              <li>Tulityö (1/2024 saakka)</li>
+              <li>Työturvallisuus (11/2023 saakka)</li>
+              <li>Sähkötyöturvallisuus SFS6002 (5/2024 saakka)</li>
+            </ul>
+          </div>
+        </div>
+        <div id="Intti" className={isAnimated4 ? 'animate3' : ''}>
+          <div id='txt' className='content'>
+            <h2>Varusmiespalvelus</h2>
+            <p>Suoritettu KAIPR, viestikomppania, telemies, kotiutuminen 6/2022</p>
+          </div>
+        </div>
+        <div id="Työ" className={isAnimated5 ? 'animate4' : ''}>
+          <div id='txt' className='content'>
+            <h2>Työkokemus</h2>
+            <p>Are Oy, kesä 15.5.2023-01.09.2023. Sähköasennusta urakkatyömaalla.</p>
+            <p>Barona Rakennus rakennusapumies, muutamia työpäiviä kesä-heinäkuu 2022</p>
+            <p>Osuma Henkilöstöpalvelut, sähköasentaja 12.7.2022-1.9.2022</p>
+            <p>Työssäoppimisharjoittelu Are Oy, ajalla 18.1. – 14.5.2021</p>
+            <p>Työssäoppimisharjoittelu Finteco LVIS Oy, ajalla 8.11. - 4.1.2021</p>
+            <p>Työssäoppimisharjoittelu POK Group Oy, ajalla 27.4. – 29.5.2020</p>
+            <p>Työssäoppimisharjoittelu Norelco Oy, ajalla 19.8. – 15.11.2019</p>
+          </div>
+        </div>
+        <div id="Kielet" className={isAnimated6 ? 'animate5' : ''}>
+          <div id='txt' className='content'>
+            <h2>Kielitaito</h2>
+            <p>Suomi – Äidinkieli</p>
+            <p>Englanti – Sujuva</p>
+          </div>
+        </div>
+        <div id="Harrastukset" className={isAnimated7 ? 'animate6' : ''}>
+          <div id='txt' className='content'>
+            <h2>Harrastukset</h2>
+            <p>Kuntosali, skeittaaminen, koodaaminen.</p>
+          </div>
+        </div>
+      </div>
+      </div>
    );
  }
 
