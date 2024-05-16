@@ -208,8 +208,8 @@ animation: wave ease-in-out 4s infinite
 
 #card{
     height: 35vh;
-    width: 70vw;
-    border-radius: 5%;
+    width: 60vw;
+    border-radius: 2%;
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
