@@ -757,14 +757,54 @@ p,li{
     color: #7289da;
 }
 /*--------------------LOG IN PAGE------------------*/
-#loginData{
-    padding:50%;
+
+#loginsivu{
+    background-color: #2d2e3a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+#loginData{
+   
+ 
+}
+
 .loginBG{
-    height: 100vh;
-    background: #27ff68;
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    margin-bottom: 5%;
+    align-items: center; 
+    color: white;
+    
+}
+
+.login{
+    height: 150%;
+    width: 100%;
+    background: #1e2124;
+    border: 1px solid #7289da;
+    border-radius: 7px;
+
+}
+
+#sendL{
+    background: #1e2124;
+    border: #7289da;
+    color: #7289da;
+    border-radius: 0%;
+    height: 5vh;
+    width: 33%;
+    font-size:large;
+   margin-left: 68%;
+   border-radius: 7px;
+}
+
+#sendL:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
 }
 
 
@@ -773,13 +813,19 @@ p,li{
 #registerpage{
     background-color: #2d2e3a;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .registerinput{
-    display: flex;
-    width: 50%;
-    margin-top: 10%;
-    height: 90%;
+    height: 150%;
+    width: 200%;
+    background: #1e2124;
+    border: 1px solid #7289da;
+    border-radius: 7px;
+   
+   
 }
 
 .formgroup{
@@ -787,8 +833,30 @@ p,li{
     grid-template-columns: 20vw 1fr;
     margin-bottom: 5%;
     align-items: center; 
+    color: white;
+    
 }
 
+#sendR{
+    background: #1e2124;
+    border: #7289da;
+    color: #7289da;
+    border-radius: 0%;
+    border-width: 6px;
+    margin-top: 5%;
+    height: 5vh;
+    width: 50%;
+    font-size:large;
+   margin-left: 68%;
+   border-radius: 7px;
+  
+}
+
+#sendR:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
 
 /*MOBIILI LAITTEILLE*/
 

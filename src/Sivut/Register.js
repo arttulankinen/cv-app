@@ -79,7 +79,7 @@ function Register() {
             />
           </div>
           <div>
-          <button type='submit'>Rekisteröidy</button>
+          <button type='submit' id="sendR">Rekisteröidy</button>
           </div>
         </form>
         </div>
