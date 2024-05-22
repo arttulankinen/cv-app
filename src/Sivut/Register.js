@@ -20,6 +20,7 @@ function Register() {
 
     if (response.ok) {
       navigate('/');
+      console.log("registration successfull")
     } else {
       console.error('Registration failed');
     }
