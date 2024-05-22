@@ -397,11 +397,10 @@ animation: wave ease-in-out 4s infinite
     color: white;
     border-style:solid ;
     border-width: 1px;
-    padding-inline-end: 5%;
-    width: 50%;
+    width: 120%;
     border-radius: 7px;
-   
     font-size: large;
+    padding: 1%;
 }
 
 .Tekstiosa::placeholder{
