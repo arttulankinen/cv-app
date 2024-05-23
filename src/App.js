@@ -8,6 +8,7 @@ import { Yhteystiedot } from './Sivut/Yhteystiedot';
 import { NotFound} from './Sivut/NotFound'
 import {Register} from './Sivut/Register'
 import {LogIn} from './Sivut/LogIn'
+import {Projects} from './Sivut/Projects'
 import './index.css';
 
 
@@ -21,9 +22,10 @@ function App() {
           <Route path='/' element={<Koti />} />
           <Route path='/Yhteystiedot' element={<Yhteystiedot />} />
           <Route path='/CV' element={<CV />} />
-          <Route path='/*' element={<NotFound />} />
           <Route path='/Register' element={<Register/>} />
           <Route path='/LogIn' element={<LogIn/>} />
+          <Route path='/Projects' element={<Projects/>} />
+          <Route path='/*' element={<NotFound />} />
         </Routes>
         <Footer />
     </Router>

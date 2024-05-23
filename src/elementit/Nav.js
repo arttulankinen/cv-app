@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import home from '../images/home.png';
 import contact from '../images/contact.png';
 import cv from '../images/cv.png';
+import project from '../images/project.png'
 
 function Nav() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -40,6 +41,7 @@ function Nav() {
       {isLoggedIn ? (
         <>
           <Link onClick={handleLogout} className='log'>LOG OUT</Link>
+          <Link to="/Yhteystiedot"><img src={contact} alt='Contact' className='logot'/></Link>
         </>
       ) : (
         <>
@@ -48,8 +50,8 @@ function Nav() {
         </>
       )}
       <Link to="/"><img src={home} alt="Home" className='logot'/></Link>
-      <Link to="/Yhteystiedot"><img src={contact} alt='Contact' className='logot'/></Link>
       <Link to="/CV"><img src={cv} alt='Cv' className='logot'/></Link>
+      <Link to="/Projects"><img src={project} alt='Projects' className='logot'/></Link>
     </div>
   );
 }

@@ -73,6 +73,7 @@
 .log:hover{
     
     animation: underline 0.5s ease forwards;
+    transform: scale(0.9);
    
 }
 
@@ -439,14 +440,26 @@ animation: wave ease-in-out 4s infinite
     height: 5vh;
     width: 80px;
     font-size: large;
+    
 }
 
 #send:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    animation: buttonhover 1s ease forwards;
 }
 
 /*ANSIOLUETTELO ANIMATIONS*/
+
+@keyframes buttonhover {
+    0% {
+         transform: scale(1);
+     }
+ 
+ 100% {
+         transform: scale(0.9);
+     }
+     
+ }
 @keyframes fadein {
    0% {
         opacity: 0;
@@ -857,14 +870,63 @@ p,li{
     transition: all ease 0.5s;
 }
 
+
+/*-----------------PROJECTPAGE----------------*/
+
+#Projectspage{
+    height: 100vh;
+    background: #2d2e3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ProjectCard1{
+    height: 35vh;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 0px 0px 5px #45517d; 
+
+}
+
+#ProjectCard1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px #6174ba; 
+}
+
+
+#left-content{
+    width:50%;
+    text-align:left;   
+    font-size: 1rem;  
+    padding: 5%;
+    margin-top: 20%;
+
+}
+
+#right-content{
+    width:50%;
+}
+
 /*MOBIILI LAITTEILLE*/
 
 @media only screen and (max-width: 375px) {
    *{
     margin: 0;
     padding: 0;
-    overflow-y: scroll;
-    overflow-x:hidden
+   }
+
+   #navId{
+    width: 100vh;
+    
+   }
+
+   #koti{
+    overflow: hidden;
    }
 
    #ekaosio{
