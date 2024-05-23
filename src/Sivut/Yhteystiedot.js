@@ -5,12 +5,17 @@ function Yhteystiedot() {
   const [dataOtsikko, setDataOtsikko] = useState('');
   const [dataViesti, setDataViesti] = useState('');
 
-  const handleEmail = (e) => setDataEmail(e.target.value);
+  const handleEmail = (e) =>{
+    setDataEmail(e.target.value);
+    console.log(e.target.value);
+  } 
+  
   const handleOtsikko = (e) => setDataOtsikko(e.target.value);
   const handleViesti = (e) => setDataViesti(e.target.value);
 
   const handleSendEmail = async (e) => {
     e.preventDefault();
+    try{
     const response = await fetch('/api/email/send', {
       method: 'POST',
       headers: {
@@ -18,6 +23,7 @@ function Yhteystiedot() {
         'Authorization': `Bearer ${localStorage.getItem('token')}` // Assuming the token is stored in localStorage
       },
       body: JSON.stringify({
+      
         email: dataEmail,
         otsikko: dataOtsikko,
         viesti: dataViesti
@@ -27,12 +33,15 @@ function Yhteystiedot() {
     const data = await response.json();
     if (response.ok) {
       alert('Email sent successfully');
-      // Clear the form
       setDataEmail('');
       setDataOtsikko('');
       setDataViesti('');
     } else {
       alert(data.msg);
+    } 
+  } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send email');
     }
   };
 

@@ -18,8 +18,9 @@ function LogIn() {
     const data = await response.json();
     if (response.ok) {
       localStorage.setItem('token', data.token);
-      alert('Login successful');
+      window.dispatchEvent(new Event('loginStateChange'));
       navigate('/');
+      console.log('successfull log in')
     } else {
       alert(data.msg);
     }

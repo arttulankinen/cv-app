@@ -1,27 +1,57 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import home from '../images/home.png';
-import contact from '../images/contact.png'
+import contact from '../images/contact.png';
 import cv from '../images/cv.png';
 
+function Nav() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
-  function Nav() {
-    return (
-      <div id='NavId'>
-        <h1 id='otsikko'><span>MY</span>Resume</h1>
+  // Fetch user login status from localStorage on component mount
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    setIsLoggedIn(!!token);
+  }, []);
+    
+  useEffect(() => {
+    const handleLoginStateChange = () => {
+      const token = localStorage.getItem('token');
+      setIsLoggedIn(!!token);
+    };
 
-        <Link to="/LogIn"className='log'>LOG IN</Link>
-        
-        <Link to="/Register" className='log'>REGISTER</Link>
-     
-        <Link to="/"><img src={home} alt="Home" className='logot'/></Link>
+    window.addEventListener('loginStateChange', handleLoginStateChange);
 
-        <Link to="/Yhteystiedot"><img src={contact} alt='Contact' className='logot'/></Link>
+    return () => {
+      window.removeEventListener('loginStateChange', handleLoginStateChange);
+    };
+  }, []);
 
-        <Link to="/CV"><img src={cv} alt='Cv' className='logot'/></Link>
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    setIsLoggedIn(false);
+    navigate('/');
+  };
 
-      </div>
-    );
-  }
+
+  return (
+    <div id='NavId'>
+      <h1 id='otsikko'><span>MY</span>Resume</h1>
+      {isLoggedIn ? (
+        <>
+          <Link onClick={handleLogout} className='log'>LOG OUT</Link>
+        </>
+      ) : (
+        <>
+          <Link to="/LogIn" className='log'>LOG IN</Link>
+          <Link to="/Register" className='log'>REGISTER</Link>
+        </>
+      )}
+      <Link to="/"><img src={home} alt="Home" className='logot'/></Link>
+      <Link to="/Yhteystiedot"><img src={contact} alt='Contact' className='logot'/></Link>
+      <Link to="/CV"><img src={cv} alt='Cv' className='logot'/></Link>
+    </div>
+  );
+}
 
 export { Nav };
