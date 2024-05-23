@@ -17,8 +17,11 @@ function Register() {
       },
       body: JSON.stringify({ username, email, password }),
     });
+    const data = await response.json();
 
     if (response.ok) {
+      localStorage.setItem('token', data.token);
+      window.dispatchEvent(new Event('loginStateChange'));
       navigate('/');
       console.log("registration successfull")
     } else {
