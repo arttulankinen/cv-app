@@ -880,7 +880,7 @@ p,li{
 
 #ProjectCard1{
     height: 35vh;
-    width: 50vw;
+    width: 45vw;
     border-radius: 10px;
     display: flex;
     flex-wrap: nowrap;
@@ -907,42 +907,12 @@ p,li{
 
 #right-content{
     width:50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#card{
-    height: 35vh;
-    width: 50vw;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    transition: all ease 1s;
-    box-shadow: 0px 0px 5px #45517d; 
-    
-}
-
-#card:hover{
-    transform: scale(1.2);
-    box-shadow: 0px 0px 12px #6174ba; 
-}
-
-#vasen-content{
-    width: 50%; 
-    text-align:left;   
-    font-size: 1rem;  
-    padding: 5%;
-}
-.vasenimg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#oikea-content{
-    width: 50%;
+#right-kuva{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 /*MOBIILI LAITTEILLE*/
 

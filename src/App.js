@@ -10,9 +10,9 @@ import {Register} from './Sivut/Register'
 import {LogIn} from './Sivut/LogIn'
 import {Projects} from './Sivut/Projects'
 import './index.css';
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
-
-
+if(Process.env.NODE_ENV === 'production') disableReactDevTools()
 
 function App() {
   return (
