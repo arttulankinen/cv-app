@@ -1,93 +1,55 @@
 import React from 'react'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
-    const RegisterForm = () => {
-      const [registerData, setRegisterData] = useState({
-        email: '',
-        käyttäjänimi: '',
-        salasana: ''
-      });
-  
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setRegisterData({
-          ...registerData,
-          [name]: value
-        });
-      };
-  
-      const sendRegisterDataToServer = async (data) => {
-        try {
-          const response = await fetch('https://your-api-endpoint.com/register', { // Replace with your actual endpoint
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          });
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          const result = await response.json();
-          console.log('Data submission successful', result);
-        } catch (error) {
-          console.error('Problem submitting data', error);
-        }
-      };
-  
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Register data submitted', registerData);
-        sendRegisterDataToServer(registerData);
-      };
-  
-      return (
-        <div id='registerpage'>
-        <form id='register' onSubmit={handleSubmit}>
-          <div className='formgroup'>
-            <label>Email:</label>
-            <input
-              type='text'
-              name='email'
-              placeholder='@gmail.com'
-              value={registerData.email}
-              onChange={handleChange}
-              className='registerinput'
-            />
-          </div>
-          <div className='formgroup'>
-            <label>Käyttäjänimi:</label>
-            <input
-              type='text'
-              name='käyttäjänimi'
-              placeholder='MaijaMeikäläinen'
-              value={registerData.käyttäjänimi}
-              onChange={handleChange}
-              className='registerinput'
-            />
-          </div>
-          <div className='formgroup'>
-            <label>Salasana:</label>
-            <input
-              type='password'
-              name='salasana'
-              placeholder='********'
-              value={registerData.salasana}
-              onChange={handleChange}
-              className='registerinput'
-            />
-          </div>
-          <div>
-          <button type='submit'>Rekisteröidy</button>
-          </div>
-        </form>
-        </div>
-      );
-    };
-  
-    return <RegisterForm />;
-  }
-  
+  const navigate = useNavigate();
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-export{Register}
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    const response = await fetch('http://localhost:5000/api/auth/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, email, password }),
+    });
+    const data = await response.json();
+
+    if (response.ok) {
+      localStorage.setItem('token', data.token);
+      window.dispatchEvent(new Event('loginStateChange'));
+      navigate('/');
+      console.log("registration successfull")
+    } else {
+      console.error('Registration failed');
+    }
+  };
+
+  return (
+    <div id='registerpage'>
+      <form  onSubmit={handleRegister}>
+        <div className='formgroup'>
+          <label>Email:</label>
+          <input type="email" className='registerinput' value={email} onChange={(e) => setEmail(e.target.value)} />
+        </div>
+        <div className='formgroup'>
+          <label>Username:</label>
+          <input type="text" className='registerinput' value={username} onChange={(e) => setUsername(e.target.value)} />
+        </div>
+        <div className='formgroup'>
+          <label>Password:</label>
+          <input type="password" className='registerinput' value={password} onChange={(e) => setPassword(e.target.value)} />
+        </div>
+        <div>
+          <button id='sendR' type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+export {Register}

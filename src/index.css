@@ -73,6 +73,7 @@
 .log:hover{
     
     animation: underline 0.5s ease forwards;
+    transform: scale(0.9);
    
 }
 
@@ -238,15 +239,6 @@ animation: wave ease-in-out 4s infinite
 #oikea-content{
     width: 50%;
 }
-
-#oikea-content-video{
-    object-fit:cover;
-    object-position: center;
-    height: auto;
-    width: 100%;
-    
-
-}
 /*animations ekaosio*/
 
 @keyframes underline {
@@ -397,11 +389,10 @@ animation: wave ease-in-out 4s infinite
     color: white;
     border-style:solid ;
     border-width: 1px;
-    padding-inline-end: 5%;
-    width: 50%;
+    width: 120%;
     border-radius: 7px;
-   
     font-size: large;
+    padding: 1%;
 }
 
 .Tekstiosa::placeholder{
@@ -440,14 +431,26 @@ animation: wave ease-in-out 4s infinite
     height: 5vh;
     width: 80px;
     font-size: large;
+    
 }
 
 #send:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    animation: buttonhover 1s ease forwards;
 }
 
 /*ANSIOLUETTELO ANIMATIONS*/
+
+@keyframes buttonhover {
+    0% {
+         transform: scale(1);
+     }
+ 
+ 100% {
+         transform: scale(0.9);
+     }
+     
+ }
 @keyframes fadein {
    0% {
         opacity: 0;
@@ -757,14 +760,54 @@ p,li{
     color: #7289da;
 }
 /*--------------------LOG IN PAGE------------------*/
-#loginData{
-    padding:50%;
+
+#loginsivu{
+    background-color: #2d2e3a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+#loginData{
+   
+ 
+}
+
 .loginBG{
-    height: 100vh;
-    background: #27ff68;
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    margin-bottom: 5%;
+    align-items: center; 
+    color: white;
+    
+}
+
+.login{
+    height: 150%;
+    width: 100%;
+    background: #1e2124;
+    border: 1px solid #7289da;
+    border-radius: 7px;
+
+}
+
+#sendL{
+    background: #1e2124;
+    border: #7289da;
+    color: #7289da;
+    border-radius: 0%;
+    height: 5vh;
+    width: 33%;
+    font-size:large;
+   margin-left: 68%;
+   border-radius: 7px;
+}
+
+#sendL:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
 }
 
 
@@ -773,13 +816,19 @@ p,li{
 #registerpage{
     background-color: #2d2e3a;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .registerinput{
-    display: flex;
-    width: 50%;
-    margin-top: 10%;
-    height: 90%;
+    height: 150%;
+    width: 200%;
+    background: #1e2124;
+    border: 1px solid #7289da;
+    border-radius: 7px;
+   
+   
 }
 
 .formgroup{
@@ -787,17 +836,99 @@ p,li{
     grid-template-columns: 20vw 1fr;
     margin-bottom: 5%;
     align-items: center; 
+    color: white;
+    
+}
+
+#sendR{
+    background: #1e2124;
+    border: #7289da;
+    color: #7289da;
+    border-radius: 0%;
+    border-width: 6px;
+    margin-top: 5%;
+    height: 5vh;
+    width: 50%;
+    font-size:large;
+   margin-left: 68%;
+   border-radius: 7px;
+  
+}
+
+#sendR:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
 }
 
 
+/*-----------------PROJECTPAGE----------------*/
+
+#Projectspage{
+    height: 100vh;
+    background: #2d2e3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header{
+    margin-bottom: 10%;
+    font-size: 3em;
+}
+
+#ProjectCard1{
+    height: 35vh;
+    width: 45vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+    box-shadow: 0px 0px 5px #5500ff; 
+    background: #1e2124;
+
+}
+
+#ProjectCard1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px #6174ba; 
+}
+
+
+#left-content{
+    width: 50%; 
+    text-align:left;   
+    font-size: 1rem;  
+    padding: 5%;
+
+}
+
+#right-content{
+    width:50%;
+}
+
+#right-kuva{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
 /*MOBIILI LAITTEILLE*/
 
 @media only screen and (max-width: 375px) {
    *{
     margin: 0;
     padding: 0;
-    overflow-y: scroll;
-    overflow-x:hidden
+   }
+
+   #navId{
+    width: 100vh;
+    
+   }
+
+   #koti{
+    overflow: hidden;
    }
 
    #ekaosio{
