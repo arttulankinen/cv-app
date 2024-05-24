@@ -239,15 +239,6 @@ animation: wave ease-in-out 4s infinite
 #oikea-content{
     width: 50%;
 }
-
-#oikea-content-video{
-    object-fit:cover;
-    object-position: center;
-    height: auto;
-    width: 100%;
-    
-
-}
 /*animations ekaosio*/
 
 @keyframes underline {
@@ -879,6 +870,12 @@ p,li{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+#header{
+    margin-bottom: 10%;
+    font-size: 3em;
 }
 
 #ProjectCard1{
@@ -888,8 +885,9 @@ p,li{
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    transition: all ease 1s;
-    box-shadow: 0px 0px 5px #45517d; 
+    transition: all ease-in-out 1s;
+    box-shadow: 0px 0px 5px #5500ff; 
+    background: #1e2124;
 
 }
 
@@ -900,18 +898,52 @@ p,li{
 
 
 #left-content{
-    width:50%;
+    width: 50%; 
     text-align:left;   
     font-size: 1rem;  
     padding: 5%;
-    margin-top: 20%;
 
 }
 
 #right-content{
     width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#card{
+    height: 35vh;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 0px 0px 5px #45517d; 
+    
+}
+
+#card:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px #6174ba; 
+}
+
+#vasen-content{
+    width: 50%; 
+    text-align:left;   
+    font-size: 1rem;  
+    padding: 5%;
+}
+.vasenimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#oikea-content{
+    width: 50%;
+}
 /*MOBIILI LAITTEILLE*/
 
 @media only screen and (max-width: 375px) {

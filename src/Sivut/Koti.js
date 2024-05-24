@@ -84,7 +84,7 @@ function Koti() {
             </div>
             <div id='tokaosio'>
             <div id='card' style={{opacity:0}}  className={`${isAnimated1Invisible ? 'fadein' : ''} ${isAnimated1Visible ? 'fadeout' : ''}`}>
-                <div id='vasen-content' >
+                <div id='vasen-content'>
                 <p id='teksti3'>
                     Tämä sivu on toteutettu käyttäen Reactia, MongoDB:tä sekä Node.js:sää<br/>
                     Sivun tarkoituksena on antaa ymmärrystä koodaus taidoistani 
