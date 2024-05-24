@@ -12,7 +12,7 @@ import {Projects} from './Sivut/Projects'
 import './index.css';
 import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 
-if(Process.env.NODE_ENV === 'production') disableReactDevTools()
+if(process.env.NODE_ENV === 'production') disableReactDevTools()
 
 function App() {
   return (
