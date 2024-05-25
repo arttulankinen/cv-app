@@ -1,6 +1,8 @@
 
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
+import config from './config';
+
 function LogIn() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -8,7 +10,7 @@ function LogIn() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch('/api/auth/login', {
+    const response = await fetch(`${backendBaseUrl}/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
