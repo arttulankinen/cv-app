@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import config from './config.js';
+
 
 function Register() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ function Register() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${backendBaseUrl}/api/auth/register`, {
+    const response = await fetch('/api/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
