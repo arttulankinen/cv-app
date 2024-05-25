@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 function Register() {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
@@ -11,6 +12,7 @@ function Register() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
+
     const response = await fetch(`${BaseURL}/api/auth/register`, {
       method: 'POST',
       headers: {
