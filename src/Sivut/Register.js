@@ -7,10 +7,11 @@ function Register() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const BaseURL = 'https://cv-app-api.onrender.com'
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:5000/api/auth/register', {
+    const response = await fetch(`${BaseURL}/api/auth/register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

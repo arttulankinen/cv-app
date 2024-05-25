@@ -5,10 +5,10 @@ function LogIn() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
+  const BaseURL = 'https://cv-app-api.onrender.com'
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch('/api/auth/login', {
+    const response = await fetch(`${BaseURL}/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

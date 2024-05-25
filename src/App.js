@@ -16,7 +16,7 @@ if(process.env.NODE_ENV === 'production') disableReactDevTools()
 
 function App() {
   return (
-    <Router basename='/cv-app'> 
+    <Router basename='/'> 
         <Nav/>
         <Routes>
           <Route path='/' element={<Koti />} />

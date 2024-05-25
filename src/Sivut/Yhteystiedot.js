@@ -4,7 +4,7 @@ function Yhteystiedot() {
   const [dataEmail, setDataEmail] = useState('');
   const [dataOtsikko, setDataOtsikko] = useState('');
   const [dataViesti, setDataViesti] = useState('');
-
+  const BaseURL = 'https://cv-app-api.onrender.com'
   const handleEmail = (e) =>{
     setDataEmail(e.target.value);
     console.log(e.target.value);
@@ -16,7 +16,7 @@ function Yhteystiedot() {
   const handleSendEmail = async (e) => {
     e.preventDefault();
     try{
-    const response = await fetch('/api/email/send', {
+    const response = await fetch(`${BaseURL}/api/email/send`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
