@@ -920,70 +920,110 @@ p,li{
    *{
     margin: 0;
     padding: 0;
-   }
-
-   #navId{
-    width: 100vh;
-    
-   }
-
-   #koti{
-    overflow: hidden;
-   }
-
-   #ekaosio{
-    height: 90vh;
-    background: linear-gradient(to right, #45517d, #7289da, #45517d);
-   }
-
-   #teksti1{
-    position: absolute;
     font-size: small;
+   }
+
+   .notfound{
+    height: 100vh;
+    background-color: #0a1e31;
+    color: white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding-bottom: 10vh;
-    
-    z-index: 2;
-}
-#teksti1 span {
-    position: absolute;
-    color: #ffffff;
-    font-size: x-large;
-    top: 15vh;
-    left: 33%;
+    justify-content: center;
 }
 
-#teksti2{
-    position: absolute;
-    font-size: small;
+#otsikko {
+    color: #7289da;
+    width: 0%;
+    height: 10vh;
+    display: flex;
+    align-items:center;
+    font-size: 20px;
+    font-weight: 2000;  
+    font-family: myFont;
+    position: relative;
+    margin-right: 20%;
+}
+
+#otsikko span {
+    font-family:'Times New Roman';
+    font-weight: 90;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+}
+
+#NavId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: #1e2124;
+    z-index: 3;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.log{
+    color: #6d5aae;
+    padding:  10px;
+    transition: all ease 1s;
+}
+
+.log:hover{
+    
+    animation: underline 0.5s ease forwards;
+    transform: scale(0.9);
+   
+}
+
+.logot {
+    margin-left: 40%;    
+    transition: all ease 0.5s;
+    
+}
+
+.logot:hover{
+    transform: scale(0.7);
+    cursor:pointer;
+}
+
+.navbuttons:hover {
+    color: #7289da;
+    cursor: pointer;
+   
+  
+}
+.copy{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+#FooterId {
+    color: white;
+    background-color: #7289da;
+    height: 7vh;
+    width: 100%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-bottom: 10vh;
-    z-index: 1;
-    
+   
 }
 
-#teksti2 span {
-    position: absolute;
-    color: #ffffff;
-    font-size: x-large;
-    top: 11vh;
-    left: 36%;
+.curve{
+    position: relative;
+   
 }
-
-#teksti3{
-    position: absolute;
-   text-align: center;
-    font-size: small;
-}
-
-
-#reactlogo {
-    padding-top:10%;
-     height: 4vh;
-     width: 4vh;
- }
-
-
- .curves {
+.curves {
     position: absolute;
     top: 0;
     left: 0;
@@ -991,7 +1031,117 @@ p,li{
     overflow-x: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    
+animation: wave ease-in-out 4s infinite 
 }
+@keyframes wave {
+    0% {width: 100%;}
+  50% {width: 200%;}
+  100% {width: 100%;}
+  
+ }
+
+.curves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 20px);
+    height:70px;
 }
 
+.curves .shape-fill {
+    fill: #2d2e3a;  
+}
 
+#ekaosio {
+    color: rgb(255, 255, 255);
+    background: #2d2e3a;
+    transition: background-color 0.3s ease;
+    display: flex;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#teksti1{
+    position: absolute;
+    font-size: large;
+    text-align: center;
+    z-index: 2;
+}
+#teksti1 span {
+    position: absolute;
+    color: #ffffff;
+    font-size: x-large;
+    top: 15vh;
+    left: 40%;
+}
+#teksti1 span:hover{
+    color: #9e01ff;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#teksti2{
+    position: absolute;
+    font-size: large;
+    text-align: center;
+    z-index: 1;
+}
+
+#teksti2 span {
+    position: absolute;
+    color: #ffffff;
+    font-size: x-large;
+    top: 15vh;
+    left: 40%;
+}
+
+#teksti2 span:hover{
+    color: #9e01ff;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#tokaosio {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #1e2124, #2b2e32 45%, #3a3d40 55%, #1e2124);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 35vh;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 0px 0px 5px #45517d; 
+    
+}
+
+#card:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px #6174ba; 
+}
+
+#vasen-content{
+    width: 50%; 
+    text-align:left;   
+    font-size: 1rem;  
+    padding: 5%;
+}
+.vasenimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#oikea-content{
+    width: 50%;
+}
+}

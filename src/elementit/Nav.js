@@ -34,6 +34,9 @@ function Nav() {
     navigate('/');
   };
 
+  const handleSidebar = () =>{
+
+  };
 
   return (
     <div id='NavId'>
@@ -45,13 +48,17 @@ function Nav() {
         </>
       ) : (
         <>
+        <button id='sidebar'></button>
+        <div id='hide' style={{display:'none'}}>
           <Link to="/LogIn" className='log'>LOG IN</Link>
           <Link to="/Register" className='log'>REGISTER</Link>
+          </div>
         </>
       )}
       <Link to="/"><img src={home} alt="Home" className='logot'/></Link>
       <Link to="/CV"><img src={cv} alt='Cv' className='logot'/></Link>
       <Link to="/Projects"><img src={project} alt='Projects' className='logot'/></Link>
+  
     </div>
   );
 }
