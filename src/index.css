@@ -1155,11 +1155,6 @@ p,li{
     overflow-x: hidden;
     }
 
-    overflow-x: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    
-animation: wave ease-in-out 4s infinite 
 }
 @keyframes wave {
     0% {width: 100%;}
@@ -1358,9 +1353,6 @@ animation: wave ease-in-out 4s infinite
     font-size: small;
 }
 
-}
-
 #oikea-content{
     width: 50%;
-}
 }
