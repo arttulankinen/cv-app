@@ -15,6 +15,7 @@ import '../index.css';
 
      
        if (scrollY > thresholdDown && !isAnimatedDown) {
+         console.log('scrollY > thresholdDown');
          setIsAnimatedDown(true);
          setIsAnimatedUp(false); 
          clearTimeout(timeout);  
@@ -27,6 +28,7 @@ import '../index.css';
         }
 
        if (scrollY < thresholdUp && !isAnimatedUp) {
+         console.log('scrollY < thresholdUp');
          setIsAnimatedUp(true);
          setIsAnimatedDown(false);  
          clearTimeout(timeout);  
@@ -95,7 +97,7 @@ import '../index.css';
     };
   }, []);
   
-  const thresholdR = 100;
+  const thresholdR =100;
   const threshold = 50;
   const threshold1 = 0;
   const threshold2 = 100;
