@@ -15,6 +15,8 @@ import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 if(process.env.NODE_ENV === 'production') disableReactDevTools()
 
 function App() {
+
+  
   return (
     <Router basename='/'> 
         <Nav/>

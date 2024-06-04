@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import home from '../images/home.png';
 import contact from '../images/contact.png';
 import cv from '../images/cv.png';
 import project from '../images/project.png'
+import dropdown from '../images/dropdown.png'
+import login from '../images/login.png';
+import register from '../images/register.png';
 
 function Nav() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  
 
   // Fetch user login status from localStorage on component mount
   useEffect(() => {
@@ -34,9 +39,16 @@ function Nav() {
     navigate('/');
   };
 
-  const handleSidebar = () =>{
 
-  };
+function DropdownItem (props) {
+  return(
+    <li className='dropdownItem'>
+       <img src={props.img}></img>
+       <Link to={props.to}>{props.text}</Link>
+    </li>
+  );
+}
+
 
   return (
     <div id='NavId'>
@@ -48,11 +60,15 @@ function Nav() {
         </>
       ) : (
         <>
-        <button id='sidebar'></button>
-        <div id='hide' style={{display:'none'}}>
-          <Link to="/LogIn" className='log'>LOG IN</Link>
-          <Link to="/Register" className='log'>REGISTER</Link>
-          </div>
+        <div className='dropdownbtn' onClick={() =>{setIsMenuVisible(!isMenuVisible)}}>
+        <img src={dropdown} alt='Dropdown'/>
+         </div>
+      <div className={`dropdownmenu ${isMenuVisible ? "active" : "inactive"}`}>
+        <ul className='dropdownList'>
+          <DropdownItem img={login} text={"LOG IN"} to="/LogIn" />
+          <DropdownItem img={register} text={"REGISTER"} to="/Register" />
+        </ul>
+      </div>
         </>
       )}
       <Link to="/"><img src={home} alt="Home" className='logot'/></Link>

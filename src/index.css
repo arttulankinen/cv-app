@@ -56,8 +56,62 @@
     z-index: 3;
 }
 
+.dropdownbtn {
+    display: flex;
+    padding: 25px;    
+    transition: all ease 0.5s;
+}
+
+.dropdownbtn:hover{
+    transform: scale(0.7);
+    cursor:pointer;
+}
+
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownmenu ul{
+    list-style-type: none;
+    top: 45px;
+    right: 0cap;
+    display: none; 
+    position: absolute;
+    box-shadow: 1px 1px 20px rgba(71, 71, 71, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdownmenu.active ul {
+    display: block; /* Show the dropdown when active */
+  }
+  
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .dropdownItem img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .dropdownItem a {
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    flex-grow: 1;
+  }
+  
+  .dropdownmenu li:hover {
+    background-color: #292b43;
+  }
 
 
+  
 ::-webkit-scrollbar{
     width: 0;
     height: 0;
@@ -648,11 +702,6 @@ animation: wave ease-in-out 4s infinite
     transition: all 1s ease;    
 }
 
-#txt{
-   
-   
-}
-
 #Koulut:hover{
     transform: scale(1.5);
     box-shadow: 0px 0px 25px #6d5aae;
@@ -737,7 +786,7 @@ animation: wave ease-in-out 4s infinite
     box-shadow:0px 0px 10px #45517d;
     border-radius: 3%;
     height: 40vh;
-    width: 50%;
+    width: 100%;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -920,6 +969,7 @@ p,li{
    *{
     margin: 0;
     padding: 0;
+
     font-size: small;
    }
 
@@ -1028,6 +1078,83 @@ p,li{
     top: 0;
     left: 0;
     width: 100vh;
+
+    padding: 5px;
+   }
+
+   .dropdownbtn {
+    display: flex;
+    padding: 10px;    
+    transition: all ease 0.5s;
+}
+
+.dropdownbtn:hover{
+    transform: scale(0.7);
+    cursor:pointer;
+}
+
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownmenu ul{
+    list-style-type: none;
+    top: 45px;
+    right: 0cap;
+    display: none; 
+    position: absolute;
+    box-shadow: 1px 1px 20px rgba(71, 71, 71, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdownmenu.active ul {
+    display: block; /* Show the dropdown when active */
+  }
+  
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .dropdownItem img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .dropdownItem a {
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    flex-grow: 1;
+  }
+  
+  .dropdownmenu li:hover {
+    background-color: #0015ff;
+  }
+
+
+  /*-----------------KOTISIVU-----------------*/
+
+  #ekaosio {
+    color: rgb(255, 255, 255);
+    background: #2d2e3a;
+  }
+
+    #koti{
+        overflow-x:hidden ;
+    }
+    #tokaosio{
+        overflow-x: hidden;
+    }
+
+    #curves{
+    overflow-x: hidden;
+    }
+
     overflow-x: hidden;
     line-height: 0;
     transform: rotate(180deg);
@@ -1097,6 +1224,25 @@ animation: wave ease-in-out 4s infinite
     left: 40%;
 }
 
+
+#teksti3{
+   text-align: center;
+    font-size: x-small;
+}
+
+ .logot{
+    padding: 10px;
+ }
+
+ #otsikko{
+    left: 15px;
+    font-size: 25px; 
+ }
+
+ #otsikko span{
+    font-size: 25px;
+ }
+
 #teksti2 span:hover{
     color: #9e01ff;
     font-size: x-large;
@@ -1135,10 +1281,83 @@ animation: wave ease-in-out 4s infinite
     font-size: 1rem;  
     padding: 5%;
 }
+
+
+.curves .shape-fill {
+    fill: #2d2e3a;  
+}
+
+#card{
+    height: 35vh;
+    width: 75vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 0px 0px 20px #45517d; 
+}
+
+#card:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px #5d80ff; 
+}
+
+
 .vasenimg{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+#vasen-content{
+    width: 40%; 
+}
+
+#oikea-content{
+    width: 50%; 
+}
+
+/*-----------------CV-----------------*/
+
+#yläosa{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2d2e3a;
+}
+
+#otsikkocv{
+    display: block;
+    text-align: left;
+    font-size: large;
+    justify-content: space-around;
+}
+
+#photo{
+    margin-left: 0%;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 360%;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255); 
+    animation: pulse 2s  infinite alternate-reverse ease-in-out;
+}
+
+.tiedot{
+   font-size: small;
+   background: #2d2e3a;
+}
+
+#esittelytxt{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    font-size: small;
+}
+
 }
 
 #oikea-content{
