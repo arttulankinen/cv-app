@@ -1129,7 +1129,6 @@ p,li{
     }
 
 
-
 @keyframes wave {
     0% {width: 100%;}
   50% {width: 200%;}
@@ -1331,6 +1330,7 @@ p,li{
     width: 50%;
 }
 
+
 /*_____________________PROJECT-SIVU_________________________*/
 
 #Projectspage{
@@ -1433,3 +1433,4 @@ p,li{
     object-fit: fill;
 }
 }
+
