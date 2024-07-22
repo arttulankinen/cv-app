@@ -27,7 +27,7 @@
 }
 
 #otsikko {
-    color: #7289da;
+    color: #A1DD70;
     width: 60%;
     height: 10vh;
     display: flex;
@@ -52,7 +52,7 @@
     align-items: center;
     position: fixed;
     width: 100vw;
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     z-index: 3;
 }
 
@@ -83,7 +83,7 @@
   }
   
   .dropdownmenu.active ul {
-    display: block; /* Show the dropdown when active */
+    display: block; 
   }
   
   .dropdownItem {
@@ -145,7 +145,7 @@
 }
 
 .navbuttons:hover {
-    color: #7289da;
+    color: #A1DD70;
     cursor: pointer;
    
   
@@ -157,7 +157,7 @@
 
 #FooterId {
     color: white;
-    background-color: #7289da;
+    background-color: #A1DD70;
     height: 7vh;
     width: 100%;
     font-size: large;
@@ -165,7 +165,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-   
 }
 
 .curve{
@@ -198,12 +197,12 @@ animation: wave ease-in-out 4s infinite
 }
 
 .curves .shape-fill {
-    fill: #2d2e3a;  
+    fill: #FDFFF0;  
 }
 
 #ekaosio {
     color: rgb(255, 255, 255);
-    background: #2d2e3a;
+    background: #FDFFF0;
     transition: background-color 0.3s ease;
     display: flex;
     height: 70vh;
@@ -218,6 +217,7 @@ animation: wave ease-in-out 4s infinite
     text-align: center;
     z-index: 2;
 }
+
 #teksti1 span {
     position: absolute;
     color: #ffffff;
@@ -254,7 +254,7 @@ animation: wave ease-in-out 4s infinite
 
 #tokaosio {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #1e2124, #2b2e32 45%, #3a3d40 55%, #1e2124);
+    background: linear-gradient(to right, #E8ECD6, #E8ECD6 45%, #E8ECD6 55%, #E8ECD6);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -299,12 +299,6 @@ animation: wave ease-in-out 4s infinite
     0%{
         text-decoration:none ;
       
-    }
-
-    50%{
-   
-      
-       
     }
 
     100%{
@@ -419,7 +413,7 @@ animation: wave ease-in-out 4s infinite
 #contactpage{
     height: 100vh;
     color: #000000;
-    background:#2d2e3a;
+    background:#FDFFF0;
     display: flex;
     text-align: center;
     align-items: center;
@@ -428,7 +422,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 #ohje{
-    color: #7289da;
+    color: #A1DD70;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,8 +432,8 @@ animation: wave ease-in-out 4s infinite
 }
 
 .Tekstiosa{
-    background-color: #1e2124;
-    border-color:#7289da;
+    background-color: #E8ECD6;
+    border-color:#A1DD70;
     color: white;
     border-style:solid ;
     border-width: 1px;
@@ -450,42 +444,33 @@ animation: wave ease-in-out 4s infinite
 }
 
 .Tekstiosa::placeholder{
-    color: #7289da;
+    color: #A1DD70;
     font-size: x-large;
     font-family:'Courier New' ;
 }
 
 #email{
     margin: 2%;
-   
-
 }
 
 #MSGotsikko{
     margin: 1%;
-
-
 }
 
 #viesti{
     height: 19%;
-   
-    
-
-
 }
 
 #send{
-    background: #1e2124;
-    border: #7289da;
-    color: #7289da;
+    background: #E8ECD6;
+    border: #A1DD70;
+    color: #A1DD70;
     border-radius: 0%;
     border-width: 6px;
     margin-top: 5%;
     height: 5vh;
     width: 80px;
     font-size: large;
-    
 }
 
 #send:hover{
@@ -518,13 +503,13 @@ animation: wave ease-in-out 4s infinite
 
 @keyframes pulse {
     0% {
-      box-shadow: 0px 0px 20px #7289da;
+      box-shadow: 0px 0px 20px #A1DD70;
     }
    50% {
-      box-shadow: 0px 0px 30px #7289da;
+      box-shadow: 0px 0px 30px #A1DD70;
     }
     100% {
-        box-shadow: 0px 0px 40px #7289da;
+        box-shadow: 0px 0px 40px #A1DD70;
     }
   }
 
@@ -622,7 +607,7 @@ animation: wave ease-in-out 4s infinite
 
 /*ANSIOLUETTELO*/
 #CV{
-    background: #2d2e3a;
+    background: #FDFFF0;
     margin: 0;
     padding: 0;
     justify-content: space-between;   
@@ -639,7 +624,7 @@ animation: wave ease-in-out 4s infinite
     padding-top: 5%;
     align-items: center;
     justify-content: center;
-    background: #2d2e3a;
+    background: #FDFFF0;
     
 }
 
@@ -657,7 +642,7 @@ animation: wave ease-in-out 4s infinite
 
 .tiedot{
     font-size: small;
-   background: #2d2e3a;
+   background: #FDFFF0;
 }
 
 #esittelytxt{
@@ -673,7 +658,7 @@ animation: wave ease-in-out 4s infinite
 #scrollContainer{
     overflow-x: scroll;
     white-space: nowrap;
-    background: #2d2e3a;
+    background: #FDFFF0;
     height: 90vh;
     width:  100vw;
     display: flex;
@@ -689,7 +674,7 @@ animation: wave ease-in-out 4s infinite
 
 
 #Koulut{
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     box-shadow:0px 0px 10px #45517d;
     border-radius: 3%;
     height: 40vh;
@@ -708,7 +693,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Kortit{
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     box-shadow:0px 0px 10px #45517d;
     border-radius: 3%;
     height: 40vh;
@@ -726,7 +711,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Intti{
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     box-shadow:0px 0px 10px #45517d;
     border-radius: 3%;
     height: 40vh;
@@ -744,7 +729,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Työ{
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     box-shadow:0px 0px 10px #45517d;
     border-radius: 3%;
     height: 40vh;
@@ -762,7 +747,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Kielet{
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     box-shadow:0px 0px 10px #45517d;
     border-radius: 3%;
     height: 40vh;
@@ -782,7 +767,7 @@ animation: wave ease-in-out 4s infinite
 
 
 #Harrastukset{
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     box-shadow:0px 0px 10px #45517d;
     border-radius: 3%;
     height: 40vh;
@@ -806,12 +791,12 @@ animation: wave ease-in-out 4s infinite
 p,li{
     color: white;
 } h1,h2{
-    color: #7289da;
+    color: #A1DD70;
 }
 /*--------------------LOG IN PAGE------------------*/
 
 #loginsivu{
-    background-color: #2d2e3a;
+    background-color: #FDFFF0;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -835,16 +820,16 @@ p,li{
 .login{
     height: 150%;
     width: 100%;
-    background: #1e2124;
-    border: 1px solid #7289da;
+    background: #E8ECD6;
+    border: 1px solid #A1DD70;
     border-radius: 7px;
 
 }
 
 #sendL{
-    background: #1e2124;
-    border: #7289da;
-    color: #7289da;
+    background: #E8ECD6;
+    border: #A1DD70;
+    color: #A1DD70;
     border-radius: 0%;
     height: 5vh;
     width: 33%;
@@ -863,7 +848,7 @@ p,li{
 /*--------------------REGISTER------------------*/
 
 #registerpage{
-    background-color: #2d2e3a;
+    background-color: #FDFFF0;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -873,8 +858,8 @@ p,li{
 .registerinput{
     height: 150%;
     width: 200%;
-    background: #1e2124;
-    border: 1px solid #7289da;
+    background: #E8ECD6;
+    border: 1px solid #A1DD70;
     border-radius: 7px;
    
    
@@ -890,9 +875,9 @@ p,li{
 }
 
 #sendR{
-    background: #1e2124;
-    border: #7289da;
-    color: #7289da;
+    background: #E8ECD6;
+    border: #A1DD70;
+    color: #A1DD70;
     border-radius: 0%;
     border-width: 6px;
     margin-top: 5%;
@@ -915,7 +900,7 @@ p,li{
 
 #Projectspage{
     height: 100vh;
-    background: #2d2e3a;
+    background: #FDFFF0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -936,7 +921,7 @@ p,li{
     overflow: hidden;
     transition: all ease-in-out 1s;
     box-shadow: 0px 0px 5px #5500ff; 
-    background: #1e2124;
+    background: #E8ECD6;
 
 }
 
@@ -965,11 +950,10 @@ p,li{
 }
 /*MOBIILI LAITTEILLE*/
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
    *{
     margin: 0;
     padding: 0;
-
     font-size: small;
    }
 
@@ -984,7 +968,7 @@ p,li{
 }
 
 #otsikko {
-    color: #7289da;
+    color: #A1DD70;
     width: 0%;
     height: 10vh;
     display: flex;
@@ -1010,7 +994,7 @@ p,li{
     align-items: center;
     position: fixed;
     width: 100vw;
-    background-color: #1e2124;
+    background-color: #E8ECD6;
     z-index: 3;
 }
 
@@ -1046,7 +1030,7 @@ p,li{
 }
 
 .navbuttons:hover {
-    color: #7289da;
+    color: #A1DD70;
     cursor: pointer;
    
   
@@ -1058,7 +1042,7 @@ p,li{
 
 #FooterId {
     color: white;
-    background-color: #7289da;
+    background-color: #A1DD70;
     height: 7vh;
     width: 100%;
     font-size: large;
@@ -1073,13 +1057,11 @@ p,li{
     position: relative;
    
 }
-.curves {
+.curves{
     position: absolute;
     top: 0;
     left: 0;
     width: 100vh;
-
-    padding: 5px;
    }
 
    .dropdownbtn {
@@ -1138,29 +1120,16 @@ p,li{
 
 
   /*-----------------KOTISIVU-----------------*/
-
-  #ekaosio {
-    color: rgb(255, 255, 255);
-    background: #2d2e3a;
-  }
-
     #koti{
         overflow-x:hidden ;
-    }
-    #tokaosio{
-        overflow-x: hidden;
     }
 
     #curves{
     overflow-x: hidden;
     }
 
-    overflow-x: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    
-animation: wave ease-in-out 4s infinite 
-}
+
+
 @keyframes wave {
     0% {width: 100%;}
   50% {width: 200%;}
@@ -1171,26 +1140,27 @@ animation: wave ease-in-out 4s infinite
 .curves svg {
     position: relative;
     display: block;
-    width: calc(100% + 20px);
-    height:70px;
+    width: calc(110% + 30px);
+    height:80px;
 }
 
 .curves .shape-fill {
-    fill: #2d2e3a;  
+    fill: #FDFFF0;  
 }
 
 #ekaosio {
-    color: rgb(255, 255, 255);
-    background: #2d2e3a;
+    color: rgb(163, 245, 152);
+    background: #FDFFF0;
     transition: background-color 0.3s ease;
     display: flex;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #teksti1{
+    color: #A1DD70;
     position: absolute;
     font-size: large;
     text-align: center;
@@ -1198,7 +1168,7 @@ animation: wave ease-in-out 4s infinite
 }
 #teksti1 span {
     position: absolute;
-    color: #ffffff;
+    color: #A1DD70;
     font-size: x-large;
     top: 15vh;
     left: 40%;
@@ -1218,7 +1188,7 @@ animation: wave ease-in-out 4s infinite
 
 #teksti2 span {
     position: absolute;
-    color: #ffffff;
+    color: #A1DD70;
     font-size: x-large;
     top: 15vh;
     left: 40%;
@@ -1235,7 +1205,7 @@ animation: wave ease-in-out 4s infinite
  }
 
  #otsikko{
-    left: 15px;
+    right: 10%;
     font-size: 25px; 
  }
 
@@ -1251,7 +1221,7 @@ animation: wave ease-in-out 4s infinite
 
 #tokaosio {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #1e2124, #2b2e32 45%, #3a3d40 55%, #1e2124);
+    background: linear-gradient(to right, #E8ECD6, #E8ECD6 45%, #E8ECD6 55%, #E8ECD6);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -1267,7 +1237,6 @@ animation: wave ease-in-out 4s infinite
     overflow: hidden;
     transition: all ease 1s;
     box-shadow: 0px 0px 5px #45517d; 
-    
 }
 
 #card:hover{
@@ -1284,7 +1253,7 @@ animation: wave ease-in-out 4s infinite
 
 
 .curves .shape-fill {
-    fill: #2d2e3a;  
+    fill: #FDFFF0;  
 }
 
 #card{
@@ -1326,7 +1295,7 @@ animation: wave ease-in-out 4s infinite
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #2d2e3a;
+    background: #FDFFF0;
 }
 
 #otsikkocv{
@@ -1347,7 +1316,7 @@ animation: wave ease-in-out 4s infinite
 
 .tiedot{
    font-size: small;
-   background: #2d2e3a;
+   background: #FDFFF0;
 }
 
 #esittelytxt{
@@ -1358,9 +1327,8 @@ animation: wave ease-in-out 4s infinite
     font-size: small;
 }
 
-}
-
 #oikea-content{
     width: 50%;
 }
+
 }

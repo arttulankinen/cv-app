@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import home from '../images/home.png';
 import contact from '../images/contact.png';
@@ -43,7 +43,7 @@ function Nav() {
 function DropdownItem (props) {
   return(
     <li className='dropdownItem'>
-       <img src={props.img}></img>
+       <img src={props.img} alt='alt'></img>
        <Link to={props.to}>{props.text}</Link>
     </li>
   );
@@ -65,8 +65,8 @@ function DropdownItem (props) {
          </div>
       <div className={`dropdownmenu ${isMenuVisible ? "active" : "inactive"}`}>
         <ul className='dropdownList'>
-          <DropdownItem img={login} text={"LOG IN"} to="/LogIn" />
-          <DropdownItem img={register} text={"REGISTER"} to="/Register" />
+          <DropdownItem img={login} alt="Login" text={"LOG IN"} to="/LogIn" />
+          <DropdownItem img={register} alt="Register" text={"REGISTER"} to="/Register" />
         </ul>
       </div>
         </>
