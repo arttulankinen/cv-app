@@ -27,7 +27,7 @@
 }
 
 #otsikko {
-    color: #A1DD70;
+    color: #7a9e7c;
     width: 60%;
     height: 10vh;
     display: flex;
@@ -52,7 +52,7 @@
     align-items: center;
     position: fixed;
     width: 100vw;
-    background-color: #E8ECD6;
+    background-color: #D8C3A5;
     z-index: 3;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .log{
-    color: #6d5aae;
+    color: #7a9e7c;
     font-size: large;
     padding:  25px;
     transition: all ease 1s;
@@ -145,7 +145,7 @@
 }
 
 .navbuttons:hover {
-    color: #A1DD70;
+    color: #7a9e7c;
     cursor: pointer;
    
   
@@ -157,7 +157,7 @@
 
 #FooterId {
     color: white;
-    background-color: #A1DD70;
+    background-color: #7a9e7c;
     height: 7vh;
     width: 100%;
     font-size: large;
@@ -197,12 +197,12 @@ animation: wave ease-in-out 4s infinite
 }
 
 .curves .shape-fill {
-    fill: #FDFFF0;  
+    fill: #EAE7DC;  
 }
 
 #ekaosio {
     color: rgb(255, 255, 255);
-    background: #FDFFF0;
+    background: #EAE7DC;
     transition: background-color 0.3s ease;
     display: flex;
     height: 70vh;
@@ -254,7 +254,7 @@ animation: wave ease-in-out 4s infinite
 
 #tokaosio {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #E8ECD6, #E8ECD6 45%, #E8ECD6 55%, #E8ECD6);
+    background: linear-gradient(to right, #D8C3A5, #D8C3A5 45%, #D8C3A5 55%, #D8C3A5);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -269,13 +269,13 @@ animation: wave ease-in-out 4s infinite
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease 1s;
-    box-shadow: 0px 0px 5px #45517d; 
+    box-shadow: 15px 20px 15px #8b6f4e; 
     
 }
 
 #card:hover{
     transform: scale(1.2);
-    box-shadow: 0px 0px 12px #6174ba; 
+    box-shadow: 0px 0px 12px #7a9e7c; 
 }
 
 #vasen-content{
@@ -304,7 +304,7 @@ animation: wave ease-in-out 4s infinite
     100%{
        
         text-decoration:underline ;
-        text-decoration-color:#6d5aae;
+        text-decoration-color:#7a9e7c;
         text-decoration-thickness: 2px;
        color: white;
         text-underline-offset:20%;
@@ -413,7 +413,7 @@ animation: wave ease-in-out 4s infinite
 #contactpage{
     height: 100vh;
     color: #000000;
-    background:#FDFFF0;
+    background:#EAE7DC;
     display: flex;
     text-align: center;
     align-items: center;
@@ -422,7 +422,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 #ohje{
-    color: #A1DD70;
+    color: #7a9e7c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -432,8 +432,8 @@ animation: wave ease-in-out 4s infinite
 }
 
 .Tekstiosa{
-    background-color: #E8ECD6;
-    border-color:#A1DD70;
+    background-color: #D8C3A5;
+    border-color:#7a9e7c;
     color: white;
     border-style:solid ;
     border-width: 1px;
@@ -444,7 +444,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 .Tekstiosa::placeholder{
-    color: #A1DD70;
+    color: #7a9e7c;
     font-size: x-large;
     font-family:'Courier New' ;
 }
@@ -462,9 +462,9 @@ animation: wave ease-in-out 4s infinite
 }
 
 #send{
-    background: #E8ECD6;
-    border: #A1DD70;
-    color: #A1DD70;
+    background: #D8C3A5;
+    border: #7a9e7c;
+    color: #7a9e7c;
     border-radius: 0%;
     border-width: 6px;
     margin-top: 5%;
@@ -503,13 +503,13 @@ animation: wave ease-in-out 4s infinite
 
 @keyframes pulse {
     0% {
-      box-shadow: 0px 0px 20px #A1DD70;
+      box-shadow: 0px 0px 20px #7a9e7c;
     }
    50% {
-      box-shadow: 0px 0px 30px #A1DD70;
+      box-shadow: 0px 0px 30px #7a9e7c;
     }
     100% {
-        box-shadow: 0px 0px 40px #A1DD70;
+        box-shadow: 0px 0px 40px #7a9e7c;
     }
   }
 
@@ -607,7 +607,7 @@ animation: wave ease-in-out 4s infinite
 
 /*ANSIOLUETTELO*/
 #CV{
-    background: #FDFFF0;
+    background: #EAE7DC;
     margin: 0;
     padding: 0;
     justify-content: space-between;   
@@ -624,7 +624,7 @@ animation: wave ease-in-out 4s infinite
     padding-top: 5%;
     align-items: center;
     justify-content: center;
-    background: #FDFFF0;
+    background: #EAE7DC;
     
 }
 
@@ -642,7 +642,7 @@ animation: wave ease-in-out 4s infinite
 
 .tiedot{
     font-size: small;
-   background: #FDFFF0;
+   background: #EAE7DC;
 }
 
 #esittelytxt{
@@ -658,7 +658,7 @@ animation: wave ease-in-out 4s infinite
 #scrollContainer{
     overflow-x: scroll;
     white-space: nowrap;
-    background: #FDFFF0;
+    background: #EAE7DC;
     height: 90vh;
     width:  100vw;
     display: flex;
@@ -674,8 +674,8 @@ animation: wave ease-in-out 4s infinite
 
 
 #Koulut{
-    background-color: #E8ECD6;
-    box-shadow:0px 0px 10px #45517d;
+    background-color: #D8C3A5;
+    box-shadow:15px 20px 15px #8b6f4e;
     border-radius: 3%;
     height: 40vh;
    
@@ -689,12 +689,12 @@ animation: wave ease-in-out 4s infinite
 
 #Koulut:hover{
     transform: scale(1.5);
-    box-shadow: 0px 0px 25px #6d5aae;
+    box-shadow: 0px 0px 25px #7a9e7c;
 }
 
 #Kortit{
-    background-color: #E8ECD6;
-    box-shadow:0px 0px 10px #45517d;
+    background-color: #D8C3A5;
+    box-shadow:15px 20px 15px #8b6f4e;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -707,12 +707,12 @@ animation: wave ease-in-out 4s infinite
 
 #Kortit:hover{
     transform: scale(1.5);
-    box-shadow: 0px 0px 25px #6d5aae;
+    box-shadow: 0px 0px 25px #7a9e7c;
 }
 
 #Intti{
-    background-color: #E8ECD6;
-    box-shadow:0px 0px 10px #45517d;
+    background-color: #D8C3A5;
+    box-shadow:15px 20px 15px #8b6f4e;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -725,12 +725,12 @@ animation: wave ease-in-out 4s infinite
 
 #Intti:hover{
     transform: scale(1.5);
-    box-shadow: 0px 0px 25px #6d5aae;
+    box-shadow: 0px 0px 25px #7a9e7c;
 }
 
 #Työ{
-    background-color: #E8ECD6;
-    box-shadow:0px 0px 10px #45517d;
+    background-color: #D8C3A5;
+    box-shadow: 15px 20px 15px #8b6f4e;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -743,12 +743,12 @@ animation: wave ease-in-out 4s infinite
 
 #Työ:hover{
     transform: scale(1.5);
-    box-shadow: 0px 0px 25px #6d5aae;
+    box-shadow: 0px 0px 25px #7a9e7c;
 }
 
 #Kielet{
-    background-color: #E8ECD6;
-    box-shadow:0px 0px 10px #45517d;
+    background-color: #D8C3A5;
+    box-shadow: 15px 20px 15px #8b6f4e;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -762,13 +762,13 @@ animation: wave ease-in-out 4s infinite
 
 #Kielet:hover{
     transform: scale(1.5);
-    box-shadow: 0px 0px 25px #6d5aae;
+    box-shadow: 0px 0px 25px #7a9e7c;
 }
 
 
 #Harrastukset{
-    background-color: #E8ECD6;
-    box-shadow:0px 0px 10px #45517d;
+    background-color: #D8C3A5;
+    box-shadow: 15px 20px 15px #8b6f4e;
     border-radius: 3%;
     height: 40vh;
     width: 100%;
@@ -783,7 +783,7 @@ animation: wave ease-in-out 4s infinite
 
 #Harrastukset:hover{
     transform: scale(1.5);
-    box-shadow: 0px 0px 25px #6d5aae;
+    box-shadow: 0px 0px 25px #7a9e7c;
 }
 
 
@@ -791,12 +791,12 @@ animation: wave ease-in-out 4s infinite
 p,li{
     color: white;
 } h1,h2{
-    color: #A1DD70;
+    color: #7a9e7c;
 }
 /*--------------------LOG IN PAGE------------------*/
 
 #loginsivu{
-    background-color: #FDFFF0;
+    background-color: #EAE7DC;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -820,16 +820,16 @@ p,li{
 .login{
     height: 150%;
     width: 100%;
-    background: #E8ECD6;
-    border: 1px solid #A1DD70;
+    background: #D8C3A5;
+    border: 1px solid #7a9e7c;
     border-radius: 7px;
 
 }
 
 #sendL{
-    background: #E8ECD6;
-    border: #A1DD70;
-    color: #A1DD70;
+    background: #D8C3A5;
+    border: #7a9e7c;
+    color: #7a9e7c;
     border-radius: 0%;
     height: 5vh;
     width: 33%;
@@ -848,7 +848,7 @@ p,li{
 /*--------------------REGISTER------------------*/
 
 #registerpage{
-    background-color: #FDFFF0;
+    background-color: #EAE7DC;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -858,8 +858,8 @@ p,li{
 .registerinput{
     height: 150%;
     width: 200%;
-    background: #E8ECD6;
-    border: 1px solid #A1DD70;
+    background: #D8C3A5;
+    border: 1px solid #7a9e7c;
     border-radius: 7px;
    
    
@@ -875,9 +875,9 @@ p,li{
 }
 
 #sendR{
-    background: #E8ECD6;
-    border: #A1DD70;
-    color: #A1DD70;
+    background: #D8C3A5;
+    border: #7a9e7c;
+    color: #7a9e7c;
     border-radius: 0%;
     border-width: 6px;
     margin-top: 5%;
@@ -900,7 +900,7 @@ p,li{
 
 #Projectspage{
     height: 100vh;
-    background: #FDFFF0;
+    background: #EAE7DC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -920,14 +920,14 @@ p,li{
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease-in-out 1s;
-    box-shadow: 0px 0px 5px #5500ff; 
-    background: #E8ECD6;
+    box-shadow: 0px 0px 5px #8b6f4e; 
+    background: #D8C3A5;
 
 }
 
 #ProjectCard1:hover{
     transform: scale(1.2);
-    box-shadow: 0px 0px 12px #6174ba; 
+    box-shadow: 0px 0px 12px #7a9e7c; 
 }
 
 
@@ -968,7 +968,7 @@ p,li{
 }
 
 #otsikko {
-    color: #A1DD70;
+    color: #7a9e7c;
     width: 0%;
     height: 10vh;
     display: flex;
@@ -994,7 +994,7 @@ p,li{
     align-items: center;
     position: fixed;
     width: 100vw;
-    background-color: #E8ECD6;
+    background-color: #D8C3A5;
     z-index: 3;
 }
 
@@ -1006,7 +1006,7 @@ p,li{
 }
 
 .log{
-    color: #6d5aae;
+    color: #7a9e7c;
     padding:  10px;
     transition: all ease 1s;
 }
@@ -1030,7 +1030,7 @@ p,li{
 }
 
 .navbuttons:hover {
-    color: #A1DD70;
+    color: #7a9e7c;
     cursor: pointer;
    
   
@@ -1042,7 +1042,7 @@ p,li{
 
 #FooterId {
     color: white;
-    background-color: #A1DD70;
+    background-color: #7a9e7c;
     height: 7vh;
     width: 100%;
     font-size: large;
@@ -1145,12 +1145,12 @@ p,li{
 }
 
 .curves .shape-fill {
-    fill: #FDFFF0;  
+    fill: #EAE7DC;  
 }
 
 #ekaosio {
     color: rgb(163, 245, 152);
-    background: #FDFFF0;
+    background: #EAE7DC;
     transition: background-color 0.3s ease;
     display: flex;
     height: 60vh;
@@ -1160,7 +1160,7 @@ p,li{
 }
 
 #teksti1{
-    color: #A1DD70;
+    color: #7a9e7c;
     position: absolute;
     font-size: large;
     text-align: center;
@@ -1168,7 +1168,7 @@ p,li{
 }
 #teksti1 span {
     position: absolute;
-    color: #A1DD70;
+    color: #7a9e7c;
     font-size: x-large;
     top: 15vh;
     left: 40%;
@@ -1188,7 +1188,7 @@ p,li{
 
 #teksti2 span {
     position: absolute;
-    color: #A1DD70;
+    color: #7a9e7c;
     font-size: x-large;
     top: 15vh;
     left: 40%;
@@ -1221,7 +1221,7 @@ p,li{
 
 #tokaosio {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #E8ECD6, #E8ECD6 45%, #E8ECD6 55%, #E8ECD6);
+    background: linear-gradient(to right, #D8C3A5, #D8C3A5 45%, #D8C3A5 55%, #D8C3A5);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -1236,12 +1236,12 @@ p,li{
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease 1s;
-    box-shadow: 0px 0px 5px #45517d; 
+    box-shadow: 0px 0px 5px #8b6f4e; 
 }
 
 #card:hover{
     transform: scale(1.2);
-    box-shadow: 0px 0px 12px #6174ba; 
+    box-shadow: 0px 0px 12px #7a9e7c; 
 }
 
 #vasen-content{
@@ -1253,7 +1253,7 @@ p,li{
 
 
 .curves .shape-fill {
-    fill: #FDFFF0;  
+    fill: #EAE7DC;  
 }
 
 #card{
@@ -1264,7 +1264,7 @@ p,li{
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease 1s;
-    box-shadow: 0px 0px 20px #45517d; 
+   box-shadow: 0px 2px 20px #8b6f4e; 
 }
 
 #card:hover{
@@ -1295,7 +1295,7 @@ p,li{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FDFFF0;
+    background: #EAE7DC;
 }
 
 #otsikkocv{
@@ -1316,7 +1316,7 @@ p,li{
 
 .tiedot{
    font-size: small;
-   background: #FDFFF0;
+   background: #EAE7DC;
 }
 
 #esittelytxt{
@@ -1331,4 +1331,105 @@ p,li{
     width: 50%;
 }
 
+/*_____________________PROJECT-SIVU_________________________*/
+
+#Projectspage{
+    height: 100vh;
+    background: #EAE7DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header{
+    margin-bottom: 10%;
+    font-size: 3em;
+}
+
+#ProjectCard1{
+    height: 35vh;
+    width: 45vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+    box-shadow: 0px 0px 5px #8b6f4e; 
+    background: #D8C3A5;
+
+}
+
+#ProjectCard1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px #7a9e7c; 
+}
+
+
+#left-content{
+    width: 50%; 
+    text-align:left;   
+    font-size: 1rem;  
+    padding: 5%;
+
+}
+
+#right-content{
+    width:50%;
+}
+
+#right-kuva{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}#Projectspage{
+    height: 100vh;
+    background: #EAE7DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header{
+    margin-bottom: 10%;
+    font-size: 3em;
+}
+
+#ProjectCard1{
+    height: 35vh;
+    width: 90vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+    box-shadow: 15px 20px 15px #8b6f4e;
+    background: #D8C3A5;
+
+}
+
+#ProjectCard1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px #7a9e7c; 
+}
+
+
+#left-content{
+    width: 50%; 
+    text-align:left;   
+    font-size: 1rem;  
+    padding: 5%;
+
+}
+
+#right-content{
+    width:50%;
+}
+
+#right-kuva{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
 }
