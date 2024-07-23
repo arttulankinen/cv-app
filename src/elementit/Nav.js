@@ -61,7 +61,7 @@ function DropdownItem (props) {
       ) : (
         <>
         <div className='dropdownbtn' onClick={() =>{setIsMenuVisible(!isMenuVisible)}}>
-        <img src={dropdown} alt='Dropdown'/>
+        <img src={dropdown}  alt='Dropdown' className='logot'/>
          </div>
       <div className={`dropdownmenu ${isMenuVisible ? "active" : "inactive"}`}>
         <ul className='dropdownList'>
