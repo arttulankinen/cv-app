@@ -4,6 +4,7 @@ import '../index.css';
 import mongo from '../images/mongoimg.png';
 import node from '../images/nodeimg.png';
 import reactimg from '../images/reactimg.png';
+import img from '../images/näyttö.png';
 
 function useScrollToNextSection(thresholdShow, thresholdHide) {
   const [isAnimatedVisible, setIsAnimatedVisible] = useState(false);
@@ -62,15 +63,15 @@ function Koti() {
     return (
         <div id='koti'>
             <div id="ekaosio">
+                <img id='näyttö' src={img} alt='näyttö'/>
                 <p id="teksti1" onClick={handleClick} className={`${isClicked ? 'slide' : ''} ${reverseClick ? 'slideback' : ''}`}>
-                    Hei!<br />
+                    <h1>Tervetuloa</h1><br/>
                     Nimeni on Arttu Lankinen ja olen 21-vuotias tietotekniikka
-                    insinöri opiskelija Kuopiosta.<br/> Harrastuksiini 
-                    kuuluu salilla käyminen, tietokoneet ja koodaus.<br/> 
+                    insinöri opiskelija Kuopiosta.<br/> 
                     <span>NEXT/CLICK</span>
                 </p>
                 <p id='teksti2' style={{ opacity: 0}} onClick={handleReverseClick} className={`${isClicked ? 'slide2' : ''} ${reverseClick ? 'slideback2' : ''}`}>
-                    Oikealla yläkulmassa voit navigoida yhteydenotto <br/> sivulle tai minun CV:seen!<br/>
+                    Oikealla yläkulmassa voit Rekisteröityä ja lähettää sitten minulle sähköpostia! <br/> Tai mennä minun CV:seen tai minun projektit sivulle<br/>
                     Alhaalla on kerrottu lisää sivusta <br/>
                     <span>GO BACK</span>
                 </p>

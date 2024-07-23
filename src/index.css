@@ -2,18 +2,18 @@
     font-family: myFont;
     src: url('/public/storm.ttf') format('truetype');
 }
+
 @font-face {
     font-family: myFont2;
-    src: url('/public/jai.TTF') format('truetype');
+    src: url('/public/Rubik.ttf') format('truetype');
 }
-
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: myFont2;
+    font-family: myFont2
 }
 
 .notfound{
@@ -52,15 +52,10 @@
     align-items: center;
     position: fixed;
     width: 100vw;
-    background-color: #D8C3A5;
+    background-color: #4d5d53;
     z-index: 3;
 }
 
-.dropdownbtn {
-    display: flex;
-    padding: 25px;    
-    transition: all ease 0.5s;
-}
 
 .dropdownbtn:hover{
     transform: scale(0.7);
@@ -78,7 +73,7 @@
     right: 0cap;
     display: none; 
     position: absolute;
-    box-shadow: 1px 1px 20px rgba(71, 71, 71, 0.2);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   
@@ -107,7 +102,7 @@
   }
   
   .dropdownmenu li:hover {
-    background-color: #292b43;
+    background-color: #425639;
   }
 
 
@@ -133,7 +128,7 @@
 
 .logot {
    display: flex;
-    padding: 25px;    
+   padding-right: 25px;  
     transition: all ease 0.5s;
 }
 
@@ -212,10 +207,26 @@ animation: wave ease-in-out 4s infinite
 }
 
 #teksti1{
+   height: 35vh;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 15px 20px 15px #a09e9d; 
     position: absolute;
+    background-color: #7a9e7c;
     font-size: large;
-    text-align: center;
+    text-align: left;
+    margin-top: 11%;
     z-index: 2;
+    
+}
+
+#teksti1 h1{
+    color: #ffffff;
+    font-family: 'Times New Roman';
 }
 
 #teksti1 span {
@@ -226,16 +237,28 @@ animation: wave ease-in-out 4s infinite
     left: 40%;
 }
 #teksti1 span:hover{
-    color: #9e01ff;
+    animation: buttonhover 0.5s ease forwards;
+    color: #cefed3;
     font-size: x-large;
     cursor: pointer;
 }
 
 #teksti2{
+    color:white;
+    height: 35vh;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 15px 20px 15px #383635; 
     position: absolute;
     font-size: large;
-    text-align: center;
+    text-align: left;
+    margin-top: 11%;
     z-index: 1;
+    background-color: #7a9e7c;
 }
 
 #teksti2 span {
@@ -247,14 +270,15 @@ animation: wave ease-in-out 4s infinite
 }
 
 #teksti2 span:hover{
-    color: #9e01ff;
+    animation: buttonhover 0.5s ease forwards;
+    color: #cefed3;
     font-size: x-large;
     cursor: pointer;
 }
 
 #tokaosio {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #D8C3A5, #D8C3A5 45%, #D8C3A5 55%, #D8C3A5);
+    background: linear-gradient(to right, #4d5d53, #4d5d53 45%, #4d5d53 55%, #4d5d53);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -269,7 +293,7 @@ animation: wave ease-in-out 4s infinite
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease 1s;
-    box-shadow: 15px 20px 15px #8b6f4e; 
+    box-shadow: 15px 20px 15px #383635; 
     
 }
 
@@ -432,7 +456,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 .Tekstiosa{
-    background-color: #D8C3A5;
+    background-color: #4d5d53;
     border-color:#7a9e7c;
     color: white;
     border-style:solid ;
@@ -462,7 +486,7 @@ animation: wave ease-in-out 4s infinite
 }
 
 #send{
-    background: #D8C3A5;
+    background: #4d5d53;
     border: #7a9e7c;
     color: #7a9e7c;
     border-radius: 0%;
@@ -629,7 +653,10 @@ animation: wave ease-in-out 4s infinite
 }
 
 #otsikkocv{
-    padding-left: 20%;
+    background-color: #4d5d53;
+    box-shadow:15px 20px 15px #383635;
+    border-radius: 3%;
+    padding: 3%;
 }
 
 #photo{
@@ -638,11 +665,12 @@ animation: wave ease-in-out 4s infinite
     border-radius: 360%;
     box-shadow: 0px 0px 20px rgb(255, 255, 255); 
     animation: pulse 3s  infinite alternate-reverse ease-in-out;
+    margin-right: 10%;
 }
 
 .tiedot{
     font-size: small;
-   background: #EAE7DC;
+   background: #4d5d53;
 }
 
 #esittelytxt{
@@ -651,6 +679,7 @@ animation: wave ease-in-out 4s infinite
     flex-direction: column;
     padding-bottom: 5%;
     font-size: small;
+    background: #4d5d53;
 }
 
 
@@ -664,21 +693,37 @@ animation: wave ease-in-out 4s infinite
     display: flex;
     align-items: center;
     gap: 20%;
-    position: sticky;
+   
 }
 
+#txt{
+    width: 710px;
+    
+}
+
+#txt h2{
+    text-align: center;
+}
+
+#txt p{
+    white-space: pre-line;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size:1rem;
+    text-align: left;   
+}
 .content{
-    width: 150%;
+    display: inline-block;
+    width: 100%;
 }
 
 
 
 #Koulut{
-    background-color: #D8C3A5;
-    box-shadow:15px 20px 15px #8b6f4e;
+    background-color: #4d5d53;
+    box-shadow:15px 20px 15px #383635;
     border-radius: 3%;
     height: 40vh;
-   
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -693,8 +738,8 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Kortit{
-    background-color: #D8C3A5;
-    box-shadow:15px 20px 15px #8b6f4e;
+    background-color: #4d5d53;
+    box-shadow:15px 20px 15px #383635;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -711,8 +756,8 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Intti{
-    background-color: #D8C3A5;
-    box-shadow:15px 20px 15px #8b6f4e;
+    background-color: #4d5d53;
+    box-shadow:15px 20px 15px #383635;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -729,8 +774,8 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Työ{
-    background-color: #D8C3A5;
-    box-shadow: 15px 20px 15px #8b6f4e;
+    background-color: #4d5d53;
+    box-shadow: 15px 20px 15px #383635;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -747,8 +792,8 @@ animation: wave ease-in-out 4s infinite
 }
 
 #Kielet{
-    background-color: #D8C3A5;
-    box-shadow: 15px 20px 15px #8b6f4e;
+    background-color: #4d5d53;
+    box-shadow: 15px 20px 15px #383635;
     border-radius: 3%;
     height: 40vh;
     text-align: left;
@@ -767,8 +812,8 @@ animation: wave ease-in-out 4s infinite
 
 
 #Harrastukset{
-    background-color: #D8C3A5;
-    box-shadow: 15px 20px 15px #8b6f4e;
+    background-color: #4d5d53;
+    box-shadow: 15px 20px 15px #383635;
     border-radius: 3%;
     height: 40vh;
     width: 100%;
@@ -820,14 +865,14 @@ p,li{
 .login{
     height: 150%;
     width: 100%;
-    background: #D8C3A5;
+    background: #4d5d53;
     border: 1px solid #7a9e7c;
     border-radius: 7px;
 
 }
 
 #sendL{
-    background: #D8C3A5;
+    background: #4d5d53;
     border: #7a9e7c;
     color: #7a9e7c;
     border-radius: 0%;
@@ -858,7 +903,7 @@ p,li{
 .registerinput{
     height: 150%;
     width: 200%;
-    background: #D8C3A5;
+    background: #4d5d53;
     border: 1px solid #7a9e7c;
     border-radius: 7px;
    
@@ -875,7 +920,7 @@ p,li{
 }
 
 #sendR{
-    background: #D8C3A5;
+    background: #4d5d53;
     border: #7a9e7c;
     color: #7a9e7c;
     border-radius: 0%;
@@ -920,8 +965,8 @@ p,li{
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease-in-out 1s;
-    box-shadow: 0px 0px 5px #8b6f4e; 
-    background: #D8C3A5;
+    box-shadow: 15px 20px 15px #383635; 
+    background: #4d5d53;
 
 }
 
@@ -994,7 +1039,7 @@ p,li{
     align-items: center;
     position: fixed;
     width: 100vw;
-    background-color: #D8C3A5;
+    background-color: #4d5d53;
     z-index: 3;
 }
 
@@ -1019,7 +1064,7 @@ p,li{
 }
 
 .logot {
-    margin-left: 40%;    
+    margin-left: 20%;    
     transition: all ease 0.5s;
     
 }
@@ -1065,9 +1110,7 @@ p,li{
    }
 
    .dropdownbtn {
-    display: flex;
-    padding: 10px;    
-    transition: all ease 0.5s;
+    padding-left: 10%;
 }
 
 .dropdownbtn:hover{
@@ -1158,22 +1201,44 @@ p,li{
     justify-content: center;
 }
 
+#näyttö {
+   
+    
+}
+
 #teksti1{
-    color: #7a9e7c;
+    align-items: center;
+    height: 27vh;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all ease 1s;
+    box-shadow: 15px 20px 15px #a09e9d; 
     position: absolute;
-    font-size: large;
-    text-align: center;
+    background-color: #7a9e7c;
+    font-size: small;
+    text-align: left;
+    margin-top: 11%;
     z-index: 2;
+}
+
+#teksti1 h1{
+    text-align: center;
+    padding-bottom: 100%;
 }
 #teksti1 span {
     position: absolute;
-    color: #7a9e7c;
+    color: #ffffff;
     font-size: x-large;
     top: 15vh;
     left: 40%;
+    
 }
 #teksti1 span:hover{
-    color: #9e01ff;
+    animation: buttonhover 0.5s ease forwards;
+    color: #cefed3;
     font-size: x-large;
     cursor: pointer;
 }
@@ -1187,7 +1252,7 @@ p,li{
 
 #teksti2 span {
     position: absolute;
-    color: #7a9e7c;
+    color: white;
     font-size: x-large;
     top: 15vh;
     left: 40%;
@@ -1212,44 +1277,15 @@ p,li{
     font-size: 25px;
  }
 
-#teksti2 span:hover{
-    color: #9e01ff;
-    font-size: x-large;
-    cursor: pointer;
-}
 
 #tokaosio {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #D8C3A5, #D8C3A5 45%, #D8C3A5 55%, #D8C3A5);
+    background: linear-gradient(to right, #4d5d53, #4d5d53 45%, #4d5d53 55%, #4d5d53);
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#card{
-    height: 35vh;
-    width: 50vw;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    transition: all ease 1s;
-    box-shadow: 0px 0px 5px #8b6f4e; 
-}
-
-#card:hover{
-    transform: scale(1.2);
-    box-shadow: 0px 0px 12px #7a9e7c; 
-}
-
-#vasen-content{
-    width: 50%; 
-    text-align:left;   
-    font-size: 1rem;  
-    padding: 5%;
-}
-
 
 .curves .shape-fill {
     fill: #EAE7DC;  
@@ -1263,12 +1299,12 @@ p,li{
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease 1s;
-   box-shadow: 0px 2px 20px #8b6f4e; 
+   box-shadow: 15px 20px 15px #383635; 
 }
 
 #card:hover{
     transform: scale(1.2);
-    box-shadow: 0px 0px 12px #5d80ff; 
+    box-shadow: 0px 0px 12px #7a9e7c; 
 }
 
 
@@ -1298,10 +1334,11 @@ p,li{
 }
 
 #otsikkocv{
-    display: block;
-    text-align: left;
-    font-size: large;
-    justify-content: space-around;
+    background-color: #4d5d53;
+    box-shadow:15px 20px 15px #383635;
+    border-radius: 3%;
+    padding: 3%;
+    width: 46vw;
 }
 
 #photo{
@@ -1311,11 +1348,12 @@ p,li{
     border-radius: 360%;
     box-shadow: 0px 0px 30px rgb(255, 255, 255); 
     animation: pulse 2s  infinite alternate-reverse ease-in-out;
+    margin-right: 2%;
 }
 
 .tiedot{
    font-size: small;
-   background: #EAE7DC;
+   background: #4d5d53;
 }
 
 #esittelytxt{
@@ -1328,6 +1366,25 @@ p,li{
 
 #oikea-content{
     width: 50%;
+}
+
+#txt{
+    width: 400px;
+    
+}
+
+#txt h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#txt p{
+    padding-top: 5%;
+    white-space: pre-line;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size:1rem;
+    text-align: left;   
 }
 
 
@@ -1355,8 +1412,8 @@ p,li{
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease-in-out 1s;
-    box-shadow: 0px 0px 5px #8b6f4e; 
-    background: #D8C3A5;
+    box-shadow: 0px 0px 5px #383635; 
+    background: #4d5d53;
 
 }
 
@@ -1404,8 +1461,8 @@ p,li{
     flex-wrap: nowrap;
     overflow: hidden;
     transition: all ease-in-out 1s;
-    box-shadow: 15px 20px 15px #8b6f4e;
-    background: #D8C3A5;
+    box-shadow: 15px 20px 15px #383635;
+    background: #4d5d53;
 
 }
 
